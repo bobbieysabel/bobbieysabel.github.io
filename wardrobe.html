@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bobbie Ysabel Benedito</title>
         <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bobbie Ysabel Benedito</title>  
     </head>
 
     <body>
@@ -37,7 +38,9 @@
                             <li>Visual Design</li>
                             <li>Brand & Identity</li>
                         </ul>
+                </section>
 
+                <section> 
                     <h2>Deliverables</h2>
                         <ul>
                             <li>Competitive Analysis</li>
@@ -50,7 +53,9 @@
                             <li>Visual Design</li>
                             <li>High Fidelity Prototype</li>
                         </ul>
+                </section>  
 
+                <section>
                     <h2>Tools</h2>
                         <ul>
                             <li>Figma</li>
@@ -76,11 +81,76 @@
                 </section>
 
                 <!--Blockquote divider-->
-                <blockquote>
-                    "There is no roadmap to style. It's about self-expression, and, above all, attitude."
-                </blockquote>
+                <div>
+                    <blockquote>"There is no roadmap to style. It's about self-expression, and, above all, attitude."</blockquote>
+            
+                    <cite>-Iris Apfel</cite>
+                </div>
 
-                <cite>-Iris Apfel</cite>
+                <!--Research and discovery-->
+                <section>
+                    <h2>Research and Discovery</h2>
+                        <h3>Competitive Analysis</h3>
+                            <p>Because Wardrobe a cloud organization tool that helps users manage their wardrobes, I studied a mix of popular cloud products and style apps. If I were to do this again I would study one more style-specific app.</p>
+
+                            <p>The ideal wardrobe management app has:
+                                <ul>
+                                    <li>Pinterest’s rich visual content</li>
+                                    <li>Evernote’s robust notetaking features</li>
+                                    <li>Stylebook’s domain-specific features</li>
+                                </ul>
+                            </p>
+
+                            <p>Read my entire competitive analysis <a href="https://paper.dropbox.com/doc/Competitive-Analysis--Ab0ZpcWcnrX3wFoi4NNbYVnhAQ-d8l6ex7iKHwIsk4CtI80w" target="_blank">here</a>.</p>
+
+                            <p>I also studied critical reviews of lesser-known wardrobe management apps on the App Store:</p>
+
+                            <blockquote>When I try to create an outfit, it doesn’t let me press the check mark button to finish the outfit. Also, you can’t edit the outfits!</blockquote>
+
+                            <blockquote>Seems like an amazing concept, but please let guys try too</blockquote>
+
+                            <blockquote>Not to mention the fact that they make it so hard to find specific clothing items and when you search for them it just comes up with nothing</blockquote>
+
+                        <h3>User Survey</h3>
+                            <p>To learn more about Wardrobe’s potential users and their frustrations with managing clothing, I conducted a survey on Google Forms. There were over 90 responders.</p>
+
+                            <div>
+                                <canvas id="donutChart1" width="199" height="200"></canvas>
+                                <p>70% of survey participants reported having felt frustrated with their clothing, agreeing with the statement “I often feel like I have plenty of clothes but nothing to wear”.</p>
+                            </div>
+                            
+                            <div>
+                                <canvas id="donutChart2" width="199" height="200"></canvas>
+                                <p>79% keep track of their wardrobes mentally or not at all.</p>
+                            </div>
+
+                            <div>
+                                <canvas id="donutChart3" width="199" height="200"></canvas>
+                                <p>81% said they would be interested in trying a digital product that helps them plan and track their wardrobes.</p>
+                            </div>
+
+                            <div>
+                                <canvas id="donutChart4" width="199" height="200"></canvas>
+                                <p>95% would prefer to access such digital wardrobe content on mobile.</p>
+                            </div>
+
+                        <h3>User Personas</h3>
+                            <p>I conducted follow-up interviews with several of the survey participants to obtain more qualitative data about Wardrobe’s potential users. Through these discussions, I gained valuable insight that allowed me to develop  three user personas for reference throughout the design process. Check out the personas <a href="https://drive.google.com/drive/folders/1301fwGUV9y-tXltPR-xFpPQxTwgq_O1w?usp=sharing" target="_blank">here</a>.</p>
+
+                            <div>
+                                <img src="images/olivia.png" width="423" height="495">
+                                <img src="images/bryan.png" width="423" height="495">
+                            </div>
+
+                        <sectiom>
+                            <h2>Main Insights</h2>
+                                <p>Frustrations with clothing and figuring out what to wear are prevalent. 81% of responders were willing to try a product like Wardrobe.</p>
+
+                                <p> A resounding majority would prefer this type of product to be a mobile app.</p>
+
+                                <p>The major needs for a product like Wardrobe are to track individual clothing items, save fashion inspiration, take notes on style choices, and experiment with outfits.</p>
+                        </section>
+                </section>
             </article>
         </main>
 
@@ -94,5 +164,7 @@
                     <li class="link"><a href="https://github.com/bobbieysabel" target="_blank">GitHub</a></li>
                 </ul>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     </body>
 </html>
