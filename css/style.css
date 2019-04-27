@@ -1,0 +1,62 @@
+:root {
+    --mint: #6DE888;
+    --black: #212121;
+    --sky: #3FA7D6;
+    --salmon: #ED4D6E;
+    --dark-grey: #5D5D5D;
+    --light-grey: #9A9A9A;
+    --white: #F1FCF4;
+  }
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: var(--white);
+}
+
+.space {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.mint {
+    color: var(--mint);
+}
+
+.sky {
+    color: var(--sky);
+}
+
+.salmon {
+    color: var(--salmon);
+}
+
+.bold {
+    font-weight: 800;
+}
