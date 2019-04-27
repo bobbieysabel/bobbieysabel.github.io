@@ -27,6 +27,9 @@ ul {
     list-style-type: none;
 }
 
+.header {
+    background-color: var(--black);
+}
 /*Link styles*/
 
 a {
@@ -156,7 +159,7 @@ p {
     font-weight: 700;
 }
 
-.white {
+.home-text {
     color: var(--white);
 }
 
