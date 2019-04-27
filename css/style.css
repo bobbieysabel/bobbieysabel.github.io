@@ -22,14 +22,10 @@ html {
 body {
     background: var(--black);
 }
-
 ul {
     list-style-type: none;
 }
 
-.header {
-    background-color: var(--black);
-}
 /*Link styles*/
 
 a {
@@ -43,6 +39,10 @@ a.nav-link {
     display: inline-block;
     position: relative;
     color: var(--white);
+}
+
+.nav-footer-bg {
+    background: var(--black);
 }
 
 /*Creates the colored lines under active links*/
@@ -128,6 +128,25 @@ h1 {
     font-size: 3.6rem;
     font-style: italic;
     font-weight: 700;
+    display: inline-block;
+    position: relative;
+}
+
+/*h1.mint-line {
+    display: inline-block;
+    position: relative;
+}*/
+
+h1.mint-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 3px solid var(--mint);
+    margin-top: 5px;
+    z-index: -1;
 }
 
 h2 {
@@ -175,5 +194,10 @@ p {
     font-family: 'Space Mono', monospace;
     font-size: 1.2rem;
     color: var(--light-grey);
+}
+
+.img-container img {
+    width: 100%; 
+    display: block;
 }
 
