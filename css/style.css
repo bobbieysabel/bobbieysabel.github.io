@@ -10,7 +10,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 *,
@@ -27,17 +27,23 @@ ul {
     list-style-type: none;
 }
 
+/*Link styles*/
+
+a {
+    text-decoration: none;
+}
+
 a.nav-link {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
     display: inline-block;
     position: relative;
     color: var(--white);
 }
 
-a.work::after {
+/*Creates the colored lines under active links*/
+a.mint-line::after {
     content: '';
     position: absolute;
     left: 0;
@@ -49,7 +55,7 @@ a.work::after {
     z-index: -1;
 }
 
-a.about::after {
+a.sky-line::after {
     content: '';
     position: absolute;
     left: 0;
@@ -61,7 +67,7 @@ a.about::after {
     z-index: -1;
 }
 
-a.writing::after {
+a.salmon-line::after {
     content: '';
     position: absolute;
     left: 0;
@@ -73,14 +79,52 @@ a.writing::after {
     z-index: -1;
 }
 
+
+/*Button styles*/
+.btn-container {
+    position: relative;
+    width: 198px;
+}
+a.btn-text {
+    font-family: 'Space Mono', monospace;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.dark-btn-fg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    border: 3px solid var(--white);
+    width: 192px;
+    height: 56px;
+}
+
+.mint-btn-bg {
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    background-color: var(--mint);
+    width: 192px;
+    height: 56px;
+    z-index: -1;
+}
+
 .intro-text {
     font-family: 'Space Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 700;
 }
 
 h2 {
@@ -93,24 +137,40 @@ h3 {
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
 }
 
 .mint-text {
     color: var(--mint);
+    font-weight: 700;
 }
 
 .sky-text {
     color: var(--sky);
+    font-weight: 700;
 }
 
 .salmon-text {
     color: var(--salmon);
+    font-weight: 700;
 }
 
-.bold {
-    font-weight: 800;
-}
-
-.home {
+.white {
     color: var(--white);
 }
+
+.footer-text {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.4rem;
+    color: var(--mint);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.copyright-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--light-grey);
+}
+
