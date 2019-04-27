@@ -20,10 +20,60 @@ html {
 }
 
 body {
-    background: var(--white);
+    background: var(--black);
 }
 
-.space {
+ul {
+    list-style-type: none;
+}
+
+a.nav-link {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: var(--white);
+}
+
+a.work::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 3px solid var(--mint);
+    margin-top: 5px;
+    z-index: -1;
+}
+
+a.about::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 3px solid var(--sky);
+    margin-top: 5px;
+    z-index: -1;
+}
+
+a.writing::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 3px solid var(--salmon);
+    margin-top: 5px;
+    z-index: -1;
+}
+
+.intro-text {
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
     font-weight: 400;
@@ -45,18 +95,22 @@ p {
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.mint {
+.mint-text {
     color: var(--mint);
 }
 
-.sky {
+.sky-text {
     color: var(--sky);
 }
 
-.salmon {
+.salmon-text {
     color: var(--salmon);
 }
 
 .bold {
     font-weight: 800;
+}
+
+.home {
+    color: var(--white);
 }
