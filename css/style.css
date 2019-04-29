@@ -177,10 +177,14 @@ h1.salmon-line::after {
 
 h2 {
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
 }
 
 h3 {
     font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 p {
