@@ -20,7 +20,23 @@ html {
 }
 
 body {
+    background: var(--white);
+}
+
+body.homepage {
     background: var(--black);
+}
+
+.nav-bg {
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    position: relative;
 }
 
 .white-bg {
@@ -57,7 +73,7 @@ a.mint-line::after {
     width: 100%;
     border-bottom: 3px solid var(--mint);
     margin-top: 5px;
-    z-index: 0;
+    z-index: -1;
 }
 
 a.sky-line::after {
@@ -89,6 +105,7 @@ a.salmon-line::after {
 .btn-container {
     position: relative;
     width: 198px;
+    z-index: 1;
 }
 a.btn-text {
     font-family: 'Space Mono', monospace;
@@ -108,11 +125,31 @@ a.btn-text {
     height: 56px;
 }
 
+.light-btn-fg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 3px solid var(--black);
+    width: 192px;
+    height: 56px;
+}
+
 .mint-btn-bg {
     position: absolute;
     left: 6px;
     top: 9px;
     background-color: var(--mint);
+    width: 192px;
+    height: 56px;
+    z-index: -1;
+}
+
+.sky-btn-bg {
+    position: absolute;
+    left: 6px;
+    top: 9px;
+    background-color: var(--sky);
     width: 192px;
     height: 56px;
     z-index: -1;
@@ -125,6 +162,7 @@ a.btn-text {
     font-style: normal;
 }
 
+/*Text styles*/
 h1 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-size: 3.6rem;
@@ -231,3 +269,6 @@ p {
     display: block;
 }
 
+footer {
+    background: var(--black);
+}
