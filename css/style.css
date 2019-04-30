@@ -277,3 +277,8 @@ li.lined {
     width: 100%; 
     display: block;
 }
+
+footer {
+    background: var(--black);
+    padding-bottom: 1rem;
+}
