@@ -204,7 +204,7 @@ h1.sky-line::after {
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom: 3px solid var(--mint);
+    border-bottom: 3px solid var(--sky);
     margin-top: 5px;
     z-index: -1;
 }
@@ -216,7 +216,7 @@ h1.salmon-line::after {
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom: 3px solid var(--mint);
+    border-bottom: 3px solid var(--salmon);
     margin-top: 5px;
     z-index: -1;
 }
