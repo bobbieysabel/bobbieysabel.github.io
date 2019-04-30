@@ -268,6 +268,11 @@ p {
     color: var(--light-grey);
 }
 
+li.lined {
+    border-left: 1px solid var(--dark-grey);
+    padding-left: 0.6rem;
+}
+
 .img-container img {
     width: 100%; 
     display: block;
