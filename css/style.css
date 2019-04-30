@@ -180,11 +180,6 @@ h1 {
     position: relative;
 }
 
-/*h1.mint-line {
-    display: inline-block;
-    position: relative;
-}*/
-
 h1.mint-line::after {
     content: '';
     position: absolute;
@@ -254,6 +249,7 @@ p {
     font-weight: 700;
 }
 
+/*Makes all text on homepage white because of black background*/
 .home-text {
     color: var(--white);
 }
