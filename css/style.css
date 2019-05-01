@@ -44,7 +44,6 @@ ul {
 }
 
 /*Link styles*/
-
 a {
     text-decoration: none;
 }
@@ -257,6 +256,18 @@ p {
     font-style: italic;
 }
 
+/*Styles text within main insights dividers*/
+h2.main-insights-text {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: italic;
+    color: var(--mint);
+    font-weight: 700;
+}
+
+p.main-insights-text {
+    color: var(--white);
+}
+
 /*Makes all text on homepage white because of black background*/
 .home-text {
     color: var(--white);
@@ -335,20 +346,6 @@ blockquote.review-quote:before {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-/*blockquote.dramatic {
-    font-family: Space Mono;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 4.8rem;
-}
-
-blockquote#wardrobe {
-    background: -webkit-linear-gradient(var(--salmon), #E89600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
 
 /*Responsive donut chart styles*/
 .donut-chart-container {
