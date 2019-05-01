@@ -177,6 +177,7 @@ h1 {
     font-weight: 700;
     display: inline-block;
     position: relative;
+    color: var(--black);
 }
 
 h1.mint-line::after {
@@ -219,18 +220,28 @@ h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
+    color: var(--black);
 }
 
 h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
+    color: var(--black);
 }
 
 p {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.8rem;
     line-height: 3.2rem;
+    color: var(--black);
+}
+
+figcaption {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--dark-grey);
 }
 
 .mint-text {
