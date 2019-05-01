@@ -309,6 +309,27 @@ li.lined {
     line-height: 4.8rem;
 }
 
+blockquote.review-quote {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    border-left: 1px solid var(--black);
+    quotes: "“""”";
+}
+
+blockquote.review-quote:before {
+    color: var(--black);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
 #wardrobe-blockquote {
     background: -webkit-linear-gradient(var(--salmon), #E89600);
     -webkit-background-clip: text;
