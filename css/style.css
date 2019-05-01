@@ -259,6 +259,7 @@ p {
 /*Styles text within main insights dividers*/
 h2.main-insights-text {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 2.4rem;
     font-style: italic;
     color: var(--mint);
     font-weight: 700;
