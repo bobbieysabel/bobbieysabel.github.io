@@ -134,25 +134,97 @@
                         <h3>User Survey</h3>
                             <p>To learn more about Wardrobe’s potential users and their frustrations with managing clothing, I conducted a survey on Google Forms. There were over 90 responders.</p>
 
-                            <div>
-                                <canvas id="donutChart1" width="199" height="200"></canvas>
-                                <p>70% of survey participants reported having felt frustrated with their clothing, agreeing with the statement “I often feel like I have plenty of clothes but nothing to wear”.</p>
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">70%</p>
+                                </div>
+                                <canvas id="donutChart1"></canvas>
+                                <script>
+                                        new Chart(document.getElementById("donutChart1"), {
+                                            type:"doughnut",
+                                            data:{"labels":["Agree","Disagree"],
+                                            datasets:[{"label":"Frustrated With Clothing",
+                                            data:[70,30],
+                                            backgroundColor:["rgb(109, 232, 136)","rgb(33, 33, 33)"] 
+                                        }]},
+                                            options: {
+                                                cutoutPercentage: 80,
+                                                legend: {display: false},
+                                            }
+                                        });
+                                </script>
                             </div>
+                            <p>70% of survey participants reported having felt frustrated with their clothing, agreeing with the statement “I often feel like I have plenty of clothes but nothing to wear”.</p>
                             
-                            <div>
-                                <canvas id="donutChart2" width="199" height="200"></canvas>
-                                <p>79% keep track of their wardrobes mentally or not at all.</p>
-                            </div>
 
-                            <div>
-                                <canvas id="donutChart3" width="199" height="200"></canvas>
-                                <p>81% said they would be interested in trying a digital product that helps them plan and track their wardrobes.</p>
-                            </div>
 
-                            <div>
-                                <canvas id="donutChart4" width="199" height="200"></canvas>
-                                <p>95% would prefer to access such digital wardrobe content on mobile.</p>
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">79%</p>
+                                </div>
+                                <canvas id="donutChart2"></canvas>
+                                <script>
+                                        new Chart(document.getElementById("donutChart2"), {
+                                            type:"doughnut",
+                                            data:{"labels":["Agree","Disagree"],
+                                            datasets:[{"label":"Frustrated With Clothing",
+                                            data:[79,21],
+                                            backgroundColor:["rgb(109, 232, 136)","rgb(33, 33, 33)"] 
+                                        }]},
+                                            options: {
+                                                cutoutPercentage: 80,
+                                                legend: {display: false},
+                                            }
+                                        });
+                                </script>
                             </div>
+                            <p>79% keep track of their wardrobes mentally or not at all.</p>
+
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">81%</p>
+                                </div>
+                                <canvas id="donutChart3"></canvas>
+                                <script>
+                                        new Chart(document.getElementById("donutChart3"), {
+                                            type:"doughnut",
+                                            data:{"labels":["Agree","Disagree"],
+                                            datasets:[{"label":"Frustrated With Clothing",
+                                            data:[81,19],
+                                            backgroundColor:["rgb(109, 232, 136)","rgb(33, 33, 33)"] 
+                                        }]},
+                                            options: {
+                                                cutoutPercentage: 80,
+                                                legend: {display: false},
+                                            }
+                                        });
+                                </script>
+                            </div>
+                            <p>81% said they would be interested in trying a digital product that helps them plan and track their wardrobes.</p>
+
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">95%</p>
+                                </div>
+                                <canvas id="donutChart4"></canvas>
+                                <script>
+                                        new Chart(document.getElementById("donutChart4"), {
+                                            type:"doughnut",
+                                            data:{"labels":["Agree","Disagree"],
+                                            datasets:[{"label":"Frustrated With Clothing",
+                                            data:[95,5],
+                                            backgroundColor:["rgb(109, 232, 136)","rgb(33, 33, 33)"] 
+                                        }]},
+                                            options: {
+                                                cutoutPercentage: 80,
+                                                legend: {display: false},
+                                            }
+                                        });
+                                </script>
+                            </div>
+                            <p>95% would prefer to access such digital wardrobe content on mobile.</p>
 
                         <h3>User Personas</h3>
                             <p>I conducted follow-up interviews with several of the survey participants to obtain more qualitative data about Wardrobe’s potential users. Through these discussions, I gained valuable insight that allowed me to develop  three user personas for reference throughout the design process. Check out the personas <a href="https://drive.google.com/drive/folders/1301fwGUV9y-tXltPR-xFpPQxTwgq_O1w?usp=sharing" target="_blank">here</a>.</p>
@@ -489,6 +561,6 @@
             <p class="copyright-text">Copyright • Bobbie Ysabel Benedito 2019</p>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        
     </body>
 </html>
