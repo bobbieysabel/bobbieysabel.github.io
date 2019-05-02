@@ -133,7 +133,8 @@ footer {
 }
 
 .footer-line {
-    border-top: 1px solid var(--light-grey);
+    padding-top: 1.6rem;
+    border-bottom: 1px solid var(--light-grey);
 }
 
 .footer-text {
