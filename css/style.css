@@ -132,6 +132,21 @@ footer {
     margin-top: 1.6rem;
 }
 
+.footer-line {
+    border-top: 1px solid var(--light-grey);
+}
+
+.footer-text {
+    font: italic 700 2.4rem "IBM Plex Sans Condensed", sans-serif;
+    color: var(--mint);
+}
+
+.copyright-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--light-grey);
+}
+
 /*Same as header nav links but with less top/bottom padding*/
 a.nav-link--footer {
     display: inline-block;
@@ -279,17 +294,6 @@ p {
 figcaption {
     font: italic 1.4rem "IBM Plex Sans", sans-serif;
     color: var(--dark-grey);
-}
-
-.footer-text {
-    font: italic 700 2.4rem "IBM Plex Sans Condensed", sans-serif;
-    color: var(--mint);
-}
-
-.copyright-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 1.2rem;
-    color: var(--light-grey);
 }
 
 /*Images*/
