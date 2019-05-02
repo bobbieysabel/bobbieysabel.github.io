@@ -56,10 +56,8 @@ a {
 }
 
 a.nav-link {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
     display: inline-block;
+    font: 700 2rem "IBM Plex Sans", sans-serif;
     position: relative;
     color: var(--white);
 }
@@ -112,11 +110,9 @@ a.salmon-line::after {
 
 /*Dark button*/
 a.light-btn-text {
-    font-family: 'Space Mono', monospace;
     color: var(--white);
-    font-size: 1.4rem;
-    font-style: italic;
     text-transform: uppercase;
+    font: italic 1.4rem "Space Mono", monospace;
 }
 
 .dark-btn-fg {
@@ -131,11 +127,9 @@ a.light-btn-text {
 
 /*Light button*/
 a.dark-btn-text {
-    font-family: 'Space Mono', monospace;
     color: var(--black);
-    font-size: 1.4rem;
-    font-style: italic;
     text-transform: uppercase;
+    font: italic 1.4rem "Space Mono", monospace;
 }
 
 .light-btn-fg {
@@ -169,24 +163,17 @@ a.dark-btn-text {
     z-index: -1;
 }
 
-.intro-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 2.4rem;
-    font-weight: 400;
-    font-style: normal;
-}
-
 /*Text styles*/
+/*Universal*/
+
 h1 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 3.6rem;
-    font-style: italic;
-    font-weight: 700;
+    font: italic 700 3.6rem/4.8rem "IBM Plex Sans Condensed", sans-serif;
     display: inline-block;
     position: relative;
     color: var(--black);
 }
 
+/*Creates colored lines under h1 text*/
 h1.mint-line::after {
     content: '';
     position: absolute;
@@ -224,33 +211,47 @@ h1.salmon-line::after {
 }
 
 h2 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font: 700 2.4rem/3.2rem  "IBM Plex Sans", sans-serif;
     color: var(--black);
 }
 
 h3 {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
+    font: 700 1.8rem/3.2rem "IBM Plex Sans", sans-serif;
     color: var(--black);
 }
 
 p {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
+    font: 400 1.8rem/3.2rem "IBM Plex Sans", sans-serif;
     color: var(--black);
 }
 
 figcaption {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.4rem;
-    font-style: italic;
+    font: italic 1.4rem "IBM Plex Sans", sans-serif;
     color: var(--dark-grey);
 }
 
+.footer-text {
+    font: italic 700 2.4rem "IBM Plex Sans Condensed", sans-serif;
+    color: var(--mint);
+}
+
+.copyright-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--light-grey);
+}
+
+/*Homepage only*/
+
+/*Makes all text on homepage white because of black background*/
+.home-text {
+    color: var(--white);
+}
+
+/*Styles text in homepage introduction*/
+.intro-text {
+    font: normal 400 2.4rem/3.2rem "Space Mono", monospace;
+}
 .mint-text {
     color: var(--mint);
     font-weight: 700;
@@ -268,42 +269,17 @@ figcaption {
 
 /*Makes list text italic and adjusts line-height*/
 .list-text {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    font-style: italic;
+    font: italic 400 1.8rem/2.4rem "IBM Plex Sans", sans-serif;
 }
 
 /*Styles text within main insights dividers*/
 h2.main-insights-text {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 2.4rem;
-    font-style: italic;
+    font: italic 700 2.4rem "IBM Plex Sans", sans-serif;
     color: var(--mint);
-    font-weight: 700;
 }
 
 p.main-insights-text {
     color: var(--white);
-}
-
-/*Makes all text on homepage white because of black background*/
-.home-text {
-    color: var(--white);
-}
-
-.footer-text {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 2.4rem;
-    color: var(--mint);
-    font-style: italic;
-    font-weight: 700;
-}
-
-.copyright-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 1.2rem;
-    color: var(--light-grey);
 }
 
 li.lined {
