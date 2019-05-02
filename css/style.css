@@ -27,7 +27,7 @@ body.homepage {
     background: var(--black);
 }
 
-/*Creates header and nav styles*/
+/*Creates layout and styles for header*/
 header {
     display: flex;
     flex-direction: column;
@@ -121,6 +121,14 @@ a.salmon-line::after {
     z-index: -1;
 }
 
+/*Creates layout and styles for footer*/
+footer {
+    background: var(--black);
+    padding-bottom: 1rem;
+    margin: 0 16px;
+}
+
+/*Same as header nav links but with less top/bottom padding*/
 a.nav-link--footer {
     display: inline-block;
     font: 700 2rem "IBM Plex Sans", sans-serif;
@@ -192,8 +200,13 @@ a.dark-btn-text {
     z-index: -1;
 }
 
-/*Text styles*/
 /*Universal*/
+/*Layout and spacing*/
+main section {
+    margin: 0 16px;
+  }
+
+/*Text styles*/
 
 h1 {
     font: italic 700 3.6rem/4.8rem "IBM Plex Sans Condensed", sans-serif;
@@ -270,8 +283,33 @@ figcaption {
     color: var(--light-grey);
 }
 
-/*Homepage only*/
+/*Images*/
+.img-container img {
+    width: 100%; 
+    display: block;
+}
 
+.img-container--full-width img {
+    width: 100%;
+    display: block;
+}
+
+.img-container--full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/*Homepage only*/
+/*Layout and spacing*/
+.project-description {
+    margin: 0;
+}
+
+/*Text styles*/
 /*Makes all text on homepage white because of black background*/
 .home-text {
     color: var(--white);
@@ -281,6 +319,7 @@ figcaption {
 .intro-text {
     font: normal 400 2.4rem/3.2rem "Space Mono", monospace;
 }
+
 .mint-text {
     color: var(--mint);
     font-weight: 700;
@@ -296,6 +335,8 @@ figcaption {
     font-weight: 700;
 }
 
+/*Case studies only*/
+/*Text styles*/
 /*Makes list text italic and adjusts line-height*/
 .list-text {
     font: italic 400 1.8rem/2.4rem "IBM Plex Sans", sans-serif;
@@ -314,11 +355,6 @@ p.main-insights-text {
 li.lined {
     border-left: 1px solid var(--dark-grey);
     padding-left: 0.6rem;
-}
-
-.img-container img {
-    width: 100%; 
-    display: block;
 }
 
 /*Section divider styles*/
@@ -362,9 +398,10 @@ blockquote.review-quote:before {
     vertical-align: -0.4em;
   }
 
-  blockquote p {
+blockquote p {
     display: inline;
-  }
+}
+
 #wardrobe-blockquote {
     background: -webkit-linear-gradient(var(--salmon), #E89600);
     -webkit-background-clip: text;
@@ -409,43 +446,37 @@ canvas {
     background: #333;
   }*/
   
-  .chevron-container {
+.chevron-container {
     /*position: relative;*/
     width: 24px;
     height: 24px;
-  }
+}
   
-  .chevron {
+.chevron {
     /*position: absolute;*/
     width: 23px;
     height: 8px;
     opacity: 1;
     transform: scale3d(1, 1, 1);
-  }
+}
   
-  .chevron:before,
-  .chevron:after {
+.chevron:before,
+.chevron:after {
     content: ' ';
     position: absolute;
     top: 0;
     height: 100%;
     width: 51%;
     background: var(--black);
-  }
+}
   
-  .chevron:before {
+.chevron:before {
     left: 0;
     transform: skew(0deg, -50deg);
-  }
+}
   
-  .chevron:after {
+.chevron:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, 50deg);
-  }
-  
-
-footer {
-    background: var(--black);
-    padding-bottom: 1rem;
 }
