@@ -69,6 +69,7 @@ ul {
 }
 
 hr {
+    margin: 0 16px;
     color: var(--light-grey);
 }
 
@@ -127,7 +128,7 @@ a.salmon-line::after {
 /*Creates layout and styles for footer*/
 footer {
     background: var(--black);
-    padding-bottom: 1rem;
+    padding-bottom: 18px;
     margin-top: 1.6rem;
 }
 
@@ -385,6 +386,14 @@ li.lined {
     padding-left: 0.6rem;
 }
 
+/*ul.list--bulleted {
+    list-style: square;
+    padding-left: 3.2rem;
+}*/
+ul.list--bulleted {
+    padding-left: 3.2rem;
+}
+
 /*Section divider styles*/
 .divider {
     display: flex;
@@ -421,6 +430,7 @@ blockquote.review-quote {
     font-family: 'IBM Plex Sans', sans-serif;
     font-style: italic;
     font-size: 1.8rem;
+    padding-left: 1rem;
     line-height: 3.2rem;
     border-left: 1px solid var(--black);
     quotes: "“""”";
