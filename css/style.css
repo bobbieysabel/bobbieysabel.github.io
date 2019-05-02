@@ -307,6 +307,22 @@ figcaption {
     font: italic 1.4rem "IBM Plex Sans", sans-serif;
     color: var(--dark-grey);
 }
+/*Horizontal scrolls (mobile only)*/
+.horizontal-scroll-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-scroll-item {
+    flex: 0 0 auto;
+}
+
+.horizontal-scroll-item img {
+    width: 70vw;
+    padding-right: 8vw;
+}
 
 /*Images*/
 .img-container img {
