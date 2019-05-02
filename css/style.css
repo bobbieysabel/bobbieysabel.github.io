@@ -387,6 +387,11 @@ li.lined {
 
 /*Section divider styles*/
 .divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.2rem 0;
     position: relative;
     width: 100%;
     background: var(--black);
@@ -406,6 +411,10 @@ li.lined {
     font-weight: 700;
     font-size: 3rem;
     line-height: 4.8rem;
+}
+
+cite.dramatic {
+    padding-bottom: 3.2rem;
 }
 
 blockquote.review-quote {
