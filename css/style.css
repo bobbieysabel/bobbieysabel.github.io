@@ -404,6 +404,7 @@ ul.list--bulleted {
     position: relative;
     width: 100%;
     background: var(--black);
+    padding: 3.2rem 0;
 }
 
 .divider-bg {
