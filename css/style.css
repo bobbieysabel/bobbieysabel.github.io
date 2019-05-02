@@ -128,13 +128,16 @@ a.salmon-line::after {
 footer {
     background: var(--black);
     padding-bottom: 1rem;
-    margin: 0 16px;
     margin-top: 1.6rem;
 }
 
 .footer-line {
     padding-top: 1.6rem;
     border-bottom: 1px solid var(--light-grey);
+}
+
+.footer-text--container {
+    margin: 0 1.6rem;
 }
 
 .footer-text {
