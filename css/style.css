@@ -27,8 +27,17 @@ body.homepage {
     background: var(--black);
 }
 
+/*Creates header and nav styles*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
 /*Creates black header background*/
-.nav-bg {
+.header-bg {
     width: 100%;
     height: 100%;
     background: var(--black);
@@ -36,12 +45,24 @@ body.homepage {
     z-index: -1;
 }
 
-header {
-    position: relative;
+.logo-container {
+    margin: 20px 20px;
+    padding-top: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 hr {
@@ -60,8 +81,8 @@ a.nav-link {
     font: 700 2rem "IBM Plex Sans", sans-serif;
     position: relative;
     color: var(--white);
+    padding: 20px 2px;
 }
-
 
 /*Creates the colored lines under active links*/
 a.mint-line::after {
@@ -98,6 +119,14 @@ a.salmon-line::after {
     border-bottom: 3px solid var(--salmon);
     margin-top: 5px;
     z-index: -1;
+}
+
+a.nav-link--footer {
+    display: inline-block;
+    font: 700 2rem "IBM Plex Sans", sans-serif;
+    position: relative;
+    color: var(--white);
+    padding: 4px 0;
 }
 
 
