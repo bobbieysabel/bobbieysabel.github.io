@@ -27,6 +27,7 @@ body.homepage {
     background: var(--black);
 }
 
+/*Creates black header background*/
 .nav-bg {
     width: 100%;
     height: 100%;
@@ -50,6 +51,8 @@ hr {
 /*Link styles*/
 a {
     text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
 }
 
 a.nav-link {
