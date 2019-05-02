@@ -172,10 +172,11 @@ a.nav-link--footer {
     position: relative;
     width: 198px;
     z-index: 1;
+    padding-bottom: 9px;
 }
 
 /*Dark button*/
-a.light-btn-text {
+.light-btn-text {
     color: var(--white);
     text-transform: uppercase;
     font: italic 1.4rem "Space Mono", monospace;
@@ -192,7 +193,7 @@ a.light-btn-text {
 }
 
 /*Light button*/
-a.dark-btn-text {
+.dark-btn-text {
     color: var(--black);
     text-transform: uppercase;
     font: italic 1.4rem "Space Mono", monospace;
@@ -359,6 +360,10 @@ figcaption {
 }
 
 /*Case studies only*/
+/*Spacing and layout*/
+article.case-study {
+    padding-top: 1.6rem;
+}
 /*Text styles*/
 /*Makes list text italic and adjusts line-height*/
 .list-text {
