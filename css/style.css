@@ -1,3 +1,5 @@
+/*Saves personal color palette for ease of use*/
+
 :root {
     --mint: #6DE888;
     --black: #212121;
@@ -21,11 +23,11 @@ body {
     background: var(--white);
 }
 
+/*Makes background black on homepage only*/
+
 body.homepage {
     background: var(--black);
 }
-
-.container {}
 
 /*Creates layout and styles for header*/
 
@@ -56,19 +58,48 @@ nav {
     width: 100%;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/*Creates layout and styles for footer*/
+
+footer {
+    background: var(--black);
+    padding-bottom: 18px;
+    margin-top: 1.6rem;
 }
 
-hr {
-    margin: 3.2rem 1.6rem;
+.footer-line {
+    padding-top: 1.6rem;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.footer-text--container {
+    margin: 0 1.6rem;
+}
+
+.footer-text {
+    font: italic 700 2.4rem "IBM Plex Sans Condensed", sans-serif;
+    color: var(--mint);
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
     color: var(--light-grey);
 }
 
@@ -124,40 +155,6 @@ a.salmon-line::after {
     border-bottom: 3px solid var(--salmon);
     margin-top: 5px;
     z-index: -1;
-}
-
-/*Creates layout and styles for footer*/
-
-footer {
-    background: var(--black);
-    padding-bottom: 18px;
-    margin-top: 1.6rem;
-}
-
-.footer-line {
-    padding-top: 1.6rem;
-    border-bottom: 1px solid var(--light-grey);
-}
-
-.footer-text--container {
-    margin: 0 1.6rem;
-}
-
-.footer-text {
-    font: italic 700 2.4rem "IBM Plex Sans Condensed", sans-serif;
-    color: var(--mint);
-}
-
-.copyright-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.copyright-text {
-    font-family: 'Space Mono', monospace;
-    font-size: 1.2rem;
-    color: var(--light-grey);
 }
 
 /*Same as header nav links but with less top/bottom padding*/
@@ -332,18 +329,12 @@ figcaption {
     flex: 0 0 auto;
 }
 
-/*
-.horizontal-scroll-item img, .horizontal-scroll-item figure {
-    width: 70vw;
-    padding-right: 8vw;
-}*/
-
 .horizontal-scroll-item>* {
     width: 70vw;
     padding-right: 8vw;
 }
 
-/*Images*/
+/*Handling images*/
 
 .img-container img {
     width: 100%;
@@ -365,10 +356,6 @@ figcaption {
 }
 
 /*Creates margins between images in a single container*/
-
-/*.img-set img {
-    margin: 1.6rem 0;
-}*/
 
 .img-set>* {
     margin: 1.6rem 0;
@@ -394,6 +381,7 @@ figcaption {
 .scroll-down-chevron {
     margin-bottom: -1rem;
 }
+
 /*Text styles*/
 
 /*Makes all text on homepage white because of black background*/
@@ -436,6 +424,13 @@ article.case-study {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*Creates line to divide major sections*/
+
+hr {
+    margin: 3.2rem 1.6rem;
+    color: var(--light-grey);
 }
 
 /*Text styles*/
@@ -536,7 +531,7 @@ blockquote p {
     -webkit-text-fill-color: transparent;
 }
 
-/*Responsive donut chart styles*/
+/*Responsive chart styles*/
 
 .donut-chart-container {
     position: relative;
@@ -563,9 +558,6 @@ canvas {
     font-weight: bold;
     font-size: 4.8rem;
 }
-
-/*Chevron styles and animations*/
-
 
 /*Back-to-top button*/
 
