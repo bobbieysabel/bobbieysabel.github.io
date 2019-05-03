@@ -6,17 +6,15 @@
     --dark-grey: #5D5D5D;
     --light-grey: #9A9A9A;
     --white: #F1FCF4;
-  }
+}
 
 html {
     box-sizing: border-box;
     font-size: 10px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -27,10 +25,10 @@ body.homepage {
     background: var(--black);
 }
 
-.container {
-}
+.container {}
 
 /*Creates layout and styles for header*/
+
 header {
     display: flex;
     flex-direction: column;
@@ -40,6 +38,7 @@ header {
 }
 
 /*Creates black header background*/
+
 .header-bg {
     width: 100%;
     height: 100%;
@@ -57,7 +56,7 @@ nav {
     width: 100%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,6 +73,7 @@ hr {
 }
 
 /*Link styles*/
+
 a {
     text-decoration: none;
     color: var(--black);
@@ -89,6 +89,7 @@ a.nav-link {
 }
 
 /*Creates the colored lines under active links*/
+
 a.mint-line::after {
     content: '';
     position: absolute;
@@ -126,6 +127,7 @@ a.salmon-line::after {
 }
 
 /*Creates layout and styles for footer*/
+
 footer {
     background: var(--black);
     padding-bottom: 18px;
@@ -159,6 +161,7 @@ footer {
 }
 
 /*Same as header nav links but with less top/bottom padding*/
+
 a.nav-link--footer {
     display: inline-block;
     font: 700 2rem "IBM Plex Sans", sans-serif;
@@ -167,8 +170,8 @@ a.nav-link--footer {
     padding: 4px 0;
 }
 
-
 /*Button styles*/
+
 .btn-container {
     position: relative;
     width: 198px;
@@ -177,6 +180,7 @@ a.nav-link--footer {
 }
 
 /*Dark button*/
+
 .light-btn-text {
     color: var(--white);
     text-transform: uppercase;
@@ -194,6 +198,7 @@ a.nav-link--footer {
 }
 
 /*Light button*/
+
 .dark-btn-text {
     color: var(--black);
     text-transform: uppercase;
@@ -211,6 +216,7 @@ a.nav-link--footer {
 }
 
 /*Button backgrounds*/
+
 .mint-btn-bg {
     position: absolute;
     left: 6px;
@@ -232,12 +238,14 @@ a.nav-link--footer {
 }
 
 /*Universal*/
+
 /*Layout and spacing*/
+
 main section {
     margin: 0 16px;
-  }
+}
 
-main section > * {
+main section>* {
     margin-top: 1.6rem;
 }
 
@@ -252,6 +260,7 @@ h1 {
 }
 
 /*Creates colored lines under h1 text*/
+
 h1.mint-line::after {
     content: '';
     position: absolute;
@@ -289,7 +298,7 @@ h1.salmon-line::after {
 }
 
 h2 {
-    font: 700 2.4rem/3.2rem  "IBM Plex Sans", sans-serif;
+    font: 700 2.4rem/3.2rem "IBM Plex Sans", sans-serif;
     color: var(--black);
 }
 
@@ -309,7 +318,9 @@ figcaption {
     margin-top: 1.6rem;
     text-align: center;
 }
+
 /*Horizontal scrolls (mobile only)*/
+
 .horizontal-scroll-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -326,14 +337,16 @@ figcaption {
     width: 70vw;
     padding-right: 8vw;
 }*/
-.horizontal-scroll-item > * {
+
+.horizontal-scroll-item>* {
     width: 70vw;
     padding-right: 8vw;
 }
 
 /*Images*/
+
 .img-container img {
-    width: 100%; 
+    width: 100%;
     display: block;
 }
 
@@ -352,27 +365,33 @@ figcaption {
 }
 
 /*Creates margins between images in a single container*/
+
 /*.img-set img {
     margin: 1.6rem 0;
 }*/
 
-.img-set > * {
+.img-set>* {
     margin: 1.6rem 0;
 }
 
 /*Homepage only*/
+
 /*Layout and spacing*/
+
 .project-description {
     margin: 0;
 }
 
 /*Text styles*/
+
 /*Makes all text on homepage white because of black background*/
+
 .home-text {
     color: var(--white);
 }
 
 /*Styles text in homepage introduction*/
+
 .intro-text {
     font: normal 400 2.4rem/3.2rem "Space Mono", monospace;
 }
@@ -393,7 +412,9 @@ figcaption {
 }
 
 /*Case studies only*/
+
 /*Spacing and layout*/
+
 article.case-study {
     padding-top: 1.6rem;
 }
@@ -403,15 +424,18 @@ article.case-study {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
 
 /*Text styles*/
+
 /*Makes list text italic and adjusts line-height*/
+
 .list-text {
     font: italic 400 1.8rem/2.4rem "IBM Plex Sans", sans-serif;
 }
 
 /*Styles text within main insights dividers*/
+
 h2.main-insights-text {
     font: italic 700 2.4rem "IBM Plex Sans", sans-serif;
     color: var(--mint);
@@ -427,15 +451,18 @@ ul.lined li {
     margin-left: 20%;
 }
 
-/*ul.list--bulleted {
-    list-style: square;
-    padding-left: 3.2rem;
-}*/
 ul.list--bulleted {
+    list-style: square;
     padding-left: 3.2rem;
 }
 
+/*ul.list--bulleted {
+    padding-left: 3.2rem;
+    list-style-image: url("assets/chevron.svg");
+}*/
+
 /*Section divider styles*/
+
 .divider {
     display: flex;
     flex-direction: column;
@@ -485,7 +512,7 @@ blockquote.review-quote:before {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-  }
+}
 
 blockquote p {
     display: inline;
@@ -498,6 +525,7 @@ blockquote p {
 }
 
 /*Responsive donut chart styles*/
+
 .donut-chart-container {
     position: relative;
 }
@@ -525,6 +553,7 @@ canvas {
 }
 
 /*Chevron styles and animations*/
+
 /*body {
     display: flex;
     justify-content: center;
@@ -534,13 +563,13 @@ canvas {
     height: 100%;
     background: #333;
   }*/
-  
+
 .chevron-container {
     /*position: relative;*/
     width: 24px;
     height: 24px;
 }
-  
+
 .chevron {
     /*position: absolute;*/
     width: 23px;
@@ -548,9 +577,8 @@ canvas {
     opacity: 1;
     transform: scale3d(1, 1, 1);
 }
-  
-.chevron:before,
-.chevron:after {
+
+.chevron:before, .chevron:after {
     content: ' ';
     position: absolute;
     top: 0;
@@ -558,39 +586,40 @@ canvas {
     width: 51%;
     background: var(--black);
 }
-  
+
 .chevron:before {
     left: 0;
     transform: skew(0deg, -50deg);
 }
-  
+
 .chevron:after {
     right: 0;
     width: 50%;
     transform: skew(0deg, 50deg);
 }
 
-/*Back-to-top*/
-.back-to-top {
+/*Back-to-top button*/
+
+.back-to-top-container {
     position: fixed;
-    bottom: 80px;
-    right: 40px;
+    bottom: 1.6rem;
+    right: 4.8rem;
     z-index: 9999;
-    width: 30px;
-    height: 30px;
+    width: 3.6rem;
     text-align: center;
-    line-height: 30px;
-    background: #f5f5f5;
-    color: #444;
-    border-radius: 2px;
+    line-height: 2rem;
     display: none;
     cursor: pointer;
-  }
-  
-  .back-to-top:hover {
-    background: #e9ebec;
-  }
-  
-  .back-to-top-show {
+}
+
+path.back-to-top {
+    fill: var(--black);
+}
+
+path.back-to-top:hover {
+    fill: var(--mint);
+}
+
+.back-to-top-show {
     display: block;
-  }
+}
