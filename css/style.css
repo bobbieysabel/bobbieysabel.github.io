@@ -29,6 +29,14 @@ body.homepage {
     background: var(--black);
 }
 
+.container { width: 100%; }
+
+@media (min-width: 600px) {
+  .container {
+    width: 900px;
+  }
+}
+
 /*Creates layout and styles for header*/
 
 header {
