@@ -537,6 +537,8 @@ blockquote p {
     background: -webkit-linear-gradient(var(--salmon), #E89600);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 /*Responsive chart styles*/
