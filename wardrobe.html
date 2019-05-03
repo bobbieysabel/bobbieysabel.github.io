@@ -857,11 +857,42 @@
             </section>
         </article>
 
-        <a href="#wardrobe-top">
+        <!--<a href="#wardrobe-top">
             <div class="chevron-container">
                 <div class="chevron"></div>
             </div>
-        </a>
+        </a>-->
+        <a class="back-to-top">Top</a>
+
+        <script>
+            (function () {
+                'use strict';
+
+                function trackScroll() {
+                    var scrolled = window.pageYOffset;
+                    var coords = document.documentElement.clientHeight;
+
+                    if (scrolled > coords) {
+                        goTopBtn.classList.add('back-to-top-show');
+                    }
+                    if (scrolled < coords) {
+                        goTopBtn.classList.remove('back-to-top-show');
+                    }
+                }
+
+                function backToTop() {
+                    if (window.pageYOffset > 0) {
+                        window.scrollBy(0, -80);
+                        setTimeout(backToTop, 0);
+                    }
+                }
+
+                var goTopBtn = document.querySelector('.back-to-top');
+
+                window.addEventListener('scroll', trackScroll);
+                goTopBtn.addEventListener('click', backToTop);
+            })();</script>
+        
     </main>
 
     <footer>

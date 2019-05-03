@@ -569,3 +569,28 @@ canvas {
     width: 50%;
     transform: skew(0deg, 50deg);
 }
+
+/*Back-to-top*/
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    border-radius: 2px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .back-to-top:hover {
+    background: #e9ebec;
+  }
+  
+  .back-to-top-show {
+    display: block;
+  }
