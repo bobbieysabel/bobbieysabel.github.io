@@ -344,6 +344,11 @@ figcaption {
     margin-right: -50vw;
 }
 
+/*Creates margins between images in a single container*/
+.img-set img {
+    margin: 1.6rem 0;
+}
+
 /*Homepage only*/
 /*Layout and spacing*/
 .project-description {
@@ -397,9 +402,10 @@ p.main-insights-text {
     color: var(--white);
 }
 
-li.lined {
+ul.lined li {
     border-left: 1px solid var(--dark-grey);
-    padding-left: 0.6rem;
+    padding-left: 1rem;
+    margin-left: 20%;
 }
 
 /*ul.list--bulleted {
