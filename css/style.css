@@ -423,10 +423,6 @@ figcaption {
 
 /*Spacing and layout*/
 
-article h1 {
-    margin: 0 16px;
-}
-
 article.case-study {
     margin-top: 1.6rem;
     padding-top: 1.6rem;
