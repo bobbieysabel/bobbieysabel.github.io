@@ -69,7 +69,7 @@ ul {
 }
 
 hr {
-    margin: 0 16px;
+    margin: 3.2rem 1.6rem;
     color: var(--light-grey);
 }
 
@@ -306,6 +306,8 @@ p {
 figcaption {
     font: italic 1.4rem "IBM Plex Sans", sans-serif;
     color: var(--dark-grey);
+    margin-top: 1.6rem;
+    text-align: center;
 }
 /*Horizontal scrolls (mobile only)*/
 .horizontal-scroll-wrapper {
@@ -319,7 +321,12 @@ figcaption {
     flex: 0 0 auto;
 }
 
-.horizontal-scroll-item img {
+/*
+.horizontal-scroll-item img, .horizontal-scroll-item figure {
+    width: 70vw;
+    padding-right: 8vw;
+}*/
+.horizontal-scroll-item > * {
     width: 70vw;
     padding-right: 8vw;
 }
@@ -345,7 +352,11 @@ figcaption {
 }
 
 /*Creates margins between images in a single container*/
-.img-set img {
+/*.img-set img {
+    margin: 1.6rem 0;
+}*/
+
+.img-set > * {
     margin: 1.6rem 0;
 }
 
@@ -386,6 +397,14 @@ figcaption {
 article.case-study {
     padding-top: 1.6rem;
 }
+
+.flex--align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
 /*Text styles*/
 /*Makes list text italic and adjusts line-height*/
 .list-text {
