@@ -869,7 +869,7 @@
 
         function trackScroll() {
             var scrolled = window.pageYOffset;
-            var coords = document.documentElement.clientHeight;
+            var coords = 4*(document.documentElement.clientHeight);
 
         if ((scrolled > coords) && ((document.body.getBoundingClientRect()).top > scrollPos)) {
             goTopBtn.classList.add('back-to-top-show');
