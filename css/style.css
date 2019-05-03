@@ -189,7 +189,7 @@ a.nav-link--footer {
 .light-btn-text {
     color: var(--white);
     text-transform: uppercase;
-    font: italic 1.4rem "Space Mono", monospace;
+    font: 700 italic 1.4rem "Space Mono", monospace;
 }
 
 .dark-btn-fg {
@@ -207,7 +207,7 @@ a.nav-link--footer {
 .dark-btn-text {
     color: var(--black);
     text-transform: uppercase;
-    font: italic 1.4rem "Space Mono", monospace;
+    font: 700 italic 1.4rem "Space Mono", monospace;
 }
 
 .light-btn-fg {
@@ -250,7 +250,7 @@ main section {
     margin: 0 16px;
 }
 
-main section>* {
+main section > * {
     margin-top: 1.6rem;
 }
 
@@ -423,8 +423,17 @@ figcaption {
 
 /*Spacing and layout*/
 
+article h1 {
+    margin: 0 16px;
+}
+
 article.case-study {
+    margin-top: 1.6rem;
     padding-top: 1.6rem;
+}
+
+h2.subtitle {
+    color: var(--dark-grey);
 }
 
 .flex--align-center {
