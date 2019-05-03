@@ -106,7 +106,7 @@ footer {
 }
 
 .copyright-text {
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     font-size: 1.2rem;
     color: var(--light-grey);
 }
@@ -504,7 +504,7 @@ ul.list--bulleted {
 }
 
 .dramatic {
-    font-family: Space Mono;
+    font-family: "Space Mono";
     font-style: italic;
     font-weight: 700;
     font-size: 3rem;
@@ -516,7 +516,7 @@ cite.dramatic {
 }
 
 blockquote.review-quote {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
     font-size: 1.8rem;
     padding-left: 1rem;
@@ -568,7 +568,7 @@ canvas {
 
 .donut-text {
     color: var(--mint);
-    font-family: IBM Plex Sans;
+    font-family: "IBM Plex Sans";
     font-style: italic;
     font-weight: bold;
     font-size: 4.8rem;
