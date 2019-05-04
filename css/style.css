@@ -277,7 +277,7 @@ main {
 
 @media (min-width: 600px) {
     main.homepage, main.about {
-      max-width: 1000px;
+      max-width: 830px;
       margin: 0 auto;
     }
   }
@@ -417,6 +417,40 @@ figcaption {
 
 /*Layout and spacing*/
 
+main.homepage {
+    display: grid;
+    grid-template-areas: 
+        "intro"
+        "scroll-down"
+        "work";
+    justify-content: start;
+    grid-row-gap: 2rem;
+    grid-column-gap: 20px;
+}
+
+.introduction {
+    grid-area: intro;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-down-container {
+    grid-area: scroll-down;
+}
+
+.work {
+    grid-area: work;
+}
+
+article.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 20px;
+}
+
 .project-thumbnail {
     max-width: 480px;
 }
@@ -453,12 +487,17 @@ figcaption {
     font: normal 400 1.333rem/1.4 "Space Mono", monospace;
 }
 
-/*@media (min-width: 600px) {
+p.intro-text {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+@media (min-width: 600px) {
     .intro-text {
-        font-size: 40px;
-        line-height: 1.25;
+        font-size: 1.9rem;
+        line-height: 1.4;
     }
-}*/
+}
 
 .mint-text {
     color: var(--mint);
