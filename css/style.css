@@ -396,13 +396,15 @@ figcaption {
     display: block;
 }
 
-.img-container--full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+@media (max-width: 600px) {
+    .img-container--full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
 }
 
 /*Creates margins between images in a single container*/
@@ -414,6 +416,10 @@ figcaption {
 /*Homepage only*/
 
 /*Layout and spacing*/
+
+.project-thumbnail {
+    max-width: 480px;
+}
 
 .project-description {
     margin: 0;
