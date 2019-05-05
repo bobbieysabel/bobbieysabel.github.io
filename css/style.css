@@ -272,7 +272,7 @@ a.nav-link--footer {
 /*Layout and spacing*/
 main {
     grid-area: content;
-    width: 100%;
+    max-width: 100vw;
 }
 
 @media (min-width: 600px) {
@@ -280,10 +280,16 @@ main {
       max-width: 830px;
       margin: 0 auto;
     }
+
+    /*main.long-form {
+        max-width: 100vw;
+    }*/
   }
 
-main section {
-    margin: 0 16px;
+@media (max-width: 600px) {
+    main section {
+        margin: 0 16px;
+    }
 }
 
 main section > * {
@@ -516,6 +522,35 @@ p.intro-text {
 
 /*Case studies only*/
 
+/*Wardrobe*/
+
+#wardrobe {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+    /*grid-template-columns: 1fr 830px 1fr;*/
+}
+/*
+.project-intro {
+    grid-column: 2/5;
+}
+
+.roles {
+    grid-column: 2/3;
+}
+
+.deliverables {
+    grid-column: 3/4;
+}
+
+.tools {
+    grid-column: 4/5;
+}
+
+/*article.case-study > section {
+    grid-column: 2/3;
+}*/
+*/
 /*Spacing and layout*/
 
 article.case-study {
@@ -588,6 +623,7 @@ ul.list--bulleted {
     width: 100%;
     background: var(--black);
     padding: 2rem 0;
+    grid-column: -1/1;
 }
 
 .divider-bg {
