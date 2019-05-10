@@ -535,44 +535,9 @@ p.intro-text {
 
 }
 
-/*@media (min-width: 600px) {
-    .project-intro {
-        grid-column: 2/5;
-    }
-
-    .roles {
-        grid-column: 2/5;
-    }
-
-    .deliverables {
-        grid-column: 3/4;
-    }
-
-    .tools {
-        grid-column: 4/5;
-    }
-}*/
-
-/*
-.project-intro {
-    grid-column: 2/5;
-}
-
-.roles {
+.first, .second, .third, .fourth {
     grid-column: 2/3;
 }
-
-.deliverables {
-    grid-column: 3/4;
-}
-
-.tools {
-    grid-column: 4/5;
-}
-
-/*article.case-study > section {
-    grid-column: 2/3;
-}*/
 
 /*Spacing and layout*/
 
