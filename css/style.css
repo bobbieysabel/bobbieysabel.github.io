@@ -296,7 +296,7 @@ main {
     max-width: 100vw;
 }
 
-main.homepage, main.about, article.case-study {
+main.homepage, main.about, article.case-study, .divider-content {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
@@ -314,6 +314,10 @@ main.homepage, main.about, article.case-study {
 
 .span-viewport-width {
     grid-column: -1/1;
+}
+
+.justify-right {
+    justify-self: end;
 }
 
 @media (max-width: 600px) {
@@ -787,7 +791,7 @@ blockquote.review-quote {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
     font-size: 1rem;
-    padding-left: 10px;
+    /*padding-left: 10px;*/
     line-height: 1.7;
     border-left: 1px solid var(--black);
     quotes: "“""”";
