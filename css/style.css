@@ -636,10 +636,10 @@ p.intro-text {
     .one-x-three > * {
         max-width: 100%;
     }
-    /*.one-x-three {
+    .flex--one-x-three {
         display: flex;
         justify-content: space-between;
-    }*/
+    }
 }
 
 /*Problem and solution grid*/
