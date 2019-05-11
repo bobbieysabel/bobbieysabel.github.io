@@ -296,10 +296,12 @@ main {
     max-width: 100vw;
 }
 
-main.homepage, main.about {
+main.homepage, main.about, article.case-study {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .single-column {
@@ -533,13 +535,11 @@ p.intro-text {
 /*Case studies only*/
 
 /*Wardrobe*/
-
+/*
 #wardrobe {
     display: grid;
     max-width: 100vw;
-    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
-    /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
 }
 
 .single-column {
@@ -559,7 +559,7 @@ p.intro-text {
         grid-column: 2/5;
     }
 }
-
+*/
 /*
 .case-study-content {
     grid-column: 2/3;
@@ -691,10 +691,10 @@ p.intro-text {
 }
 /*Spacing and layout*/
 
-article.case-study {
+/*article.case-study {
     margin-top: 1rem;
     padding-top: 1rem;
-}
+}*/
 
 h2.subtitle {
     color: var(--dark-grey);
