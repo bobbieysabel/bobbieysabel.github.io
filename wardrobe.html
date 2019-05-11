@@ -209,111 +209,115 @@
 
                         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-                        <div class="donut-chart-container">
-                            <div class="donut-text-container">
-                                <p class="donut-text">70%</p>
+                        <div class="wardrobe-research">
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">70%</p>
+                                </div>
+                                <canvas id="donutChart1"></canvas>
+                                <script>
+                                    new Chart(document.getElementById("donutChart1"), {
+                                        type: "doughnut",
+                                        data: {
+                                            "labels": ["Agree", "Disagree"],
+                                            datasets: [{
+                                                "label": "Frustrated With Clothing",
+                                                data: [70, 30],
+                                                backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
+                                            }]
+                                        },
+                                        options: {
+                                            cutoutPercentage: 80,
+                                            legend: { display: false },
+                                        }
+                                    });
+                                </script>
                             </div>
-                            <canvas id="donutChart1"></canvas>
-                            <script>
-                                new Chart(document.getElementById("donutChart1"), {
-                                    type: "doughnut",
-                                    data: {
-                                        "labels": ["Agree", "Disagree"],
-                                        datasets: [{
-                                            "label": "Frustrated With Clothing",
-                                            data: [70, 30],
-                                            backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
-                                        }]
-                                    },
-                                    options: {
-                                        cutoutPercentage: 80,
-                                        legend: { display: false },
-                                    }
-                                });
-                            </script>
-                        </div>
-                        <p>70% of survey participants reported having felt frustrated with their clothing, agreeing with
-                            the
-                            statement “I often feel like I have plenty of clothes but nothing to wear”.</p>
+                            <p>70% of survey participants reported having felt frustrated with their clothing, agreeing
+                                with
+                                the
+                                statement “I often feel like I have plenty of clothes but nothing to wear”.</p>
 
 
 
-                        <div class="donut-chart-container">
-                            <div class="donut-text-container">
-                                <p class="donut-text">79%</p>
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">79%</p>
+                                </div>
+                                <canvas id="donutChart2"></canvas>
+                                <script>
+                                    new Chart(document.getElementById("donutChart2"), {
+                                        type: "doughnut",
+                                        data: {
+                                            "labels": ["Agree", "Disagree"],
+                                            datasets: [{
+                                                "label": "Frustrated With Clothing",
+                                                data: [79, 21],
+                                                backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
+                                            }]
+                                        },
+                                        options: {
+                                            cutoutPercentage: 80,
+                                            legend: { display: false },
+                                        }
+                                    });
+                                </script>
                             </div>
-                            <canvas id="donutChart2"></canvas>
-                            <script>
-                                new Chart(document.getElementById("donutChart2"), {
-                                    type: "doughnut",
-                                    data: {
-                                        "labels": ["Agree", "Disagree"],
-                                        datasets: [{
-                                            "label": "Frustrated With Clothing",
-                                            data: [79, 21],
-                                            backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
-                                        }]
-                                    },
-                                    options: {
-                                        cutoutPercentage: 80,
-                                        legend: { display: false },
-                                    }
-                                });
-                            </script>
-                        </div>
-                        <p>79% keep track of their wardrobes mentally or not at all.</p>
+                            <p>79% keep track of their wardrobes mentally or not at all.</p>
 
-                        <div class="donut-chart-container">
-                            <div class="donut-text-container">
-                                <p class="donut-text">81%</p>
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">81%</p>
+                                </div>
+                                <canvas id="donutChart3"></canvas>
+                                <script>
+                                    new Chart(document.getElementById("donutChart3"), {
+                                        type: "doughnut",
+                                        data: {
+                                            "labels": ["Agree", "Disagree"],
+                                            datasets: [{
+                                                "label": "Frustrated With Clothing",
+                                                data: [81, 19],
+                                                backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
+                                            }]
+                                        },
+                                        options: {
+                                            cutoutPercentage: 80,
+                                            legend: { display: false },
+                                        }
+                                    });
+                                </script>
                             </div>
-                            <canvas id="donutChart3"></canvas>
-                            <script>
-                                new Chart(document.getElementById("donutChart3"), {
-                                    type: "doughnut",
-                                    data: {
-                                        "labels": ["Agree", "Disagree"],
-                                        datasets: [{
-                                            "label": "Frustrated With Clothing",
-                                            data: [81, 19],
-                                            backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
-                                        }]
-                                    },
-                                    options: {
-                                        cutoutPercentage: 80,
-                                        legend: { display: false },
-                                    }
-                                });
-                            </script>
-                        </div>
-                        <p>81% said they would be interested in trying a digital product that helps them plan and track
-                            their
-                            wardrobes.</p>
+                            <p>81% said they would be interested in trying a digital product that helps them plan and
+                                track
+                                their
+                                wardrobes.</p>
 
-                        <div class="donut-chart-container">
-                            <div class="donut-text-container">
-                                <p class="donut-text">95%</p>
+                            <div class="donut-chart-container">
+                                <div class="donut-text-container">
+                                    <p class="donut-text">95%</p>
+                                </div>
+                                <canvas id="donutChart4"></canvas>
+                                <script>
+                                    new Chart(document.getElementById("donutChart4"), {
+                                        type: "doughnut",
+                                        data: {
+                                            "labels": ["Agree", "Disagree"],
+                                            datasets: [{
+                                                "label": "Frustrated With Clothing",
+                                                data: [95, 5],
+                                                backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
+                                            }]
+                                        },
+                                        options: {
+                                            cutoutPercentage: 80,
+                                            legend: { display: false },
+                                        }
+                                    });
+                                </script>
                             </div>
-                            <canvas id="donutChart4"></canvas>
-                            <script>
-                                new Chart(document.getElementById("donutChart4"), {
-                                    type: "doughnut",
-                                    data: {
-                                        "labels": ["Agree", "Disagree"],
-                                        datasets: [{
-                                            "label": "Frustrated With Clothing",
-                                            data: [95, 5],
-                                            backgroundColor: ["rgb(109, 232, 136)", "rgb(33, 33, 33)"]
-                                        }]
-                                    },
-                                    options: {
-                                        cutoutPercentage: 80,
-                                        legend: { display: false },
-                                    }
-                                });
-                            </script>
+                            <p>95% would prefer to access such digital wardrobe content on mobile.</p>
                         </div>
-                        <p>95% would prefer to access such digital wardrobe content on mobile.</p>
                     </section>
 
                     <section>

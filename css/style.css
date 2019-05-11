@@ -586,6 +586,50 @@ p.intro-text {
     }
 }
 
+/*Responsive chart styles*/
+.wardrobe-research {
+    display: grid;
+    /*grid-template-columns: 1fr 2fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-row-gap: 1rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media (min-width: 600px) {
+    .wardrobe-research {
+        grid-row-gap: 3rem;
+    }
+}
+
+.donut-chart-container {
+    position: relative;
+    max-width: 350px;
+    max-height: 175px;
+}
+
+/*canvas {
+    width: 50vw;
+}*/
+
+.donut-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.donut-text {
+    color: var(--mint);
+    font-family: "IBM Plex Sans";
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.369rem;
+}
+
 /*Spacing and layout*/
 
 article.case-study {
@@ -711,33 +755,7 @@ blockquote p {
     color: transparent;
 }
 
-/*Responsive chart styles*/
 
-.donut-chart-container {
-    position: relative;
-}
-
-canvas {
-    width: 50vw;
-}
-
-.donut-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.donut-text {
-    color: var(--mint);
-    font-family: "IBM Plex Sans";
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2.369rem;
-}
 
 /*Back-to-top button*/
 
