@@ -286,11 +286,11 @@ main {
     }*/
   }
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     main section {
         margin: 0 16px;
     }
-}
+}*/
 
 main section > * {
     margin-top: 1rem;
@@ -530,7 +530,7 @@ p.intro-text {
     display: grid;
     max-width: 100vw;
     /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
-    grid-template-columns: 1fr minmax(240px, 1000px) 1fr;
+    grid-template-columns: minmax(16px, 1fr) minmax(240px, 1000px) minmax(16px, 1fr);
     /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
 
 }
