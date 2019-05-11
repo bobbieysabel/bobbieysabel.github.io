@@ -417,14 +417,14 @@ figcaption {
         max-width: 70vw;
     }
     
-    .horizontal-scroll-width {
+    .shrink {
         grid-column: -1/1;
     }
 }
-/*At larger screens, makes the horizontal scroll container smaller so it doesn't take up entire viewport*/
+/*At larger screens, shrinks images that shouldn't take up the entire viewport*/
 
 @media (min-width: 600px) {
-    .horizontal-scroll-width {
+    .shrink {
         grid-column: 2/5;
     }
 }
