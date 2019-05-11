@@ -371,21 +371,6 @@ figcaption {
 /*Horizontal scrolls (mobile only)*/
 
 @media (max-width: 600px) {
-    /*.horizontal-scroll-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .horizontal-scroll-item {
-        flex: 0 0 auto;
-    }
-    
-    .horizontal-scroll-item>* {
-        width: 70vw;
-        padding-right: 8vw;
-    }*/
     .horizontal-scroll-wrapper {
         overflow-x: auto;
         display: grid;
@@ -398,6 +383,17 @@ figcaption {
     }
     .horizontal-scroll-item img {
         max-width: 70vw;
+    }
+    
+    .horizontal-scroll-width {
+        grid-column: -1/1;
+    }
+}
+/*At larger screens, makes the horizontal scroll container smaller so it doesn't take up entire viewport*/
+
+@media (min-width: 600px) {
+    .horizontal-scroll-width {
+        grid-column: 2/5;
     }
 }
 
@@ -576,17 +572,23 @@ p.intro-text {
 */
 
 @media (min-width: 600px) {
-    /*.three-columns {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }*/
     .three-columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 1rem;
+    }
+
+    .three-columns > * {
+        max-width: 100%;
+    }
+    /*.three-columns {
         display: flex;
         justify-content: space-between;
-    }
+    }*/
 }
 
 /*Responsive chart styles*/
+
 .wardrobe-research {
     display: grid;
     /*grid-template-columns: 1fr 2fr;*/
@@ -628,6 +630,45 @@ p.intro-text {
     font-style: italic;
     font-weight: bold;
     font-size: 2.369rem;
+}
+
+/*1x2 grid*/
+
+.one-x-two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1rem;
+}
+
+/*Problem and solution grid*/
+
+@media (min-width: 600px) {
+    .problem-solution {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+    }
+    
+    .problem-solution .problem-text {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .problem-solution .solution-text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .problem-solution .problem-image {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .problem-solution .solution-image {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 }
 
 /*Spacing and layout*/
@@ -755,7 +796,11 @@ blockquote p {
     color: transparent;
 }
 
-
+@media (max-width: 600px) {
+    .mobile-disappear {
+        display: none;
+    }
+}
 
 /*Back-to-top button*/
 
