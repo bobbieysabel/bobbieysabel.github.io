@@ -816,6 +816,7 @@ blockquote p {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    color: var(--salmon);
 }
 
 @media (max-width: 600px) {
