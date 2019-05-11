@@ -375,7 +375,7 @@ figcaption {
 /*Horizontal scrolls (mobile only)*/
 
 @media (max-width: 600px) {
-    .horizontal-scroll-wrapper {
+    /*.horizontal-scroll-wrapper {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -389,6 +389,17 @@ figcaption {
     .horizontal-scroll-item>* {
         width: 70vw;
         padding-right: 8vw;
+    }*/
+    .horizontal-scroll-wrapper {
+        overflow-x: auto;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 70vw);
+        /*grid-template-rows: minmax(150px, 1fr);*/
+    }
+
+    .horizontal-scroll-item img {
+        max-width: 70vw;
     }
 }
 
@@ -549,7 +560,7 @@ p.intro-text {
     grid-column: 2/3;
 }
 
-.case-study-content .full-width {
+.case-study-content > .full-width {
     grid-column: -1/1;
 }
 
