@@ -571,21 +571,7 @@ p.intro-text {
 }
 */
 
-@media (min-width: 600px) {
-    .three-columns {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        grid-gap: 1rem;
-    }
 
-    .three-columns > * {
-        max-width: 100%;
-    }
-    /*.three-columns {
-        display: flex;
-        justify-content: space-between;
-    }*/
-}
 
 /*Responsive chart styles*/
 
@@ -638,6 +624,22 @@ p.intro-text {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .one-x-three {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-gap: 1rem;
+    }
+
+    .one-x-three > * {
+        max-width: 100%;
+    }
+    /*.one-x-three {
+        display: flex;
+        justify-content: space-between;
+    }*/
 }
 
 /*Problem and solution grid*/
