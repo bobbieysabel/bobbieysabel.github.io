@@ -812,11 +812,11 @@ blockquote p {
 
 #wardrobe-blockquote {
     background: -webkit-linear-gradient(var(--salmon), #E89600);
+    background-color: var(--salmon);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    color: var(--salmon);
 }
 
 @media (max-width: 600px) {
