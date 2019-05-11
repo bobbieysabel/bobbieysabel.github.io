@@ -541,8 +541,16 @@ p.intro-text {
     grid-template-columns: 1fr minmax(240px, 660px) 1fr;
 }
 
-.case-study-content > * {
+/*.case-study-content > * {
     grid-column: 2/3;
+}*/
+
+.case-study-content .in-grid {
+    grid-column: 2/3;
+}
+
+.case-study-content .full-width {
+    grid-column: -1/1;
 }
 
 @media (min-width: 600px) {
