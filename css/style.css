@@ -575,7 +575,7 @@ p.intro-text {
 
 /*Responsive chart styles*/
 
-.wardrobe-research {
+.two-x-four {
     display: grid;
     /*grid-template-columns: 1fr 2fr;*/
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -585,7 +585,7 @@ p.intro-text {
 }
 
 @media (min-width: 600px) {
-    .wardrobe-research {
+    .two-x-four {
         grid-row-gap: 3rem;
     }
 }
@@ -673,6 +673,16 @@ p.intro-text {
     }
 }
 
+/*Final product grid*/
+@media (min-width: 600px) {
+    .final-product-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    align-items: center;
+    }
+}
 /*Spacing and layout*/
 
 article.case-study {
