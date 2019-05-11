@@ -545,6 +545,17 @@ p.intro-text {
     grid-column: 2/3;
 }
 
+@media (min-width: 600px) {
+    /*.three-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }*/
+
+    .three-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 /*Spacing and layout*/
 
