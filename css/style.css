@@ -267,26 +267,58 @@ a.nav-link--footer {
 
 /*Layout and spacing*/
 
+/*#wardrobe {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
+}
+
+.single-column {
+    grid-column: 3/4;
+}
+
+.span-content-width {
+    grid-column: 2/5;
+}
+
+.span-viewport-width {
+    grid-column: -1/1;
+}
+
+@media (max-width: 600px) {
+    .single-column {
+        grid-column: 2/5;
+    }
+}*/
+
 main {
     grid-area: content;
     max-width: 100vw;
 }
 
-@media (min-width: 600px) {
-    main.homepage, main.about {
-        max-width: 830px;
-        margin: 0 auto;
-    }
-    /*main.long-form {
-        max-width: 100vw;
-    }*/
+main.homepage, main.about {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
 }
 
-/*@media (max-width: 600px) {
-    main section {
-        margin: 0 16px;
+.single-column {
+    grid-column: 3/4;
+}
+
+.span-content-width {
+    grid-column: 2/5;
+}
+
+.span-viewport-width {
+    grid-column: -1/1;
+}
+
+@media (max-width: 600px) {
+    .single-column {
+        grid-column: 2/5;
     }
-}*/
+}
 
 main section>* {
     margin-top: 1rem;
@@ -429,32 +461,6 @@ figcaption {
 /*Homepage only*/
 
 /*Layout and spacing*/
-
-main.homepage {
-    display: grid;
-    grid-template-areas: "intro" "scroll-down" "work";
-    justify-content: start;
-    grid-row-gap: 2rem;
-    grid-column-gap: 20px;
-}
-
-.introduction {
-    grid-area: intro;
-    justify-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.scroll-down-container {
-    grid-area: scroll-down;
-}
-
-.work {
-    grid-area: work;
-}
-
 article.project {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
