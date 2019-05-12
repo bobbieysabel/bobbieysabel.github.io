@@ -207,12 +207,6 @@ a.nav-link--footer {
 
 /*Dark button*/
 
-.light-btn-text {
-    color: var(--white);
-    text-transform: uppercase;
-    font: 700 italic 0.75rem "Space Mono", monospace;
-}
-
 .dark-btn-fg {
     display: flex;
     align-items: center;
@@ -221,15 +215,12 @@ a.nav-link--footer {
     border: 3px solid var(--white);
     width: 192px;
     height: 56px;
-}
-
-/*Light button*/
-
-.dark-btn-text {
-    color: var(--black);
+    color: var(--white);
     text-transform: uppercase;
     font: 700 italic 0.75rem "Space Mono", monospace;
 }
+
+/*Light button*/
 
 .light-btn-fg {
     display: flex;
@@ -239,6 +230,9 @@ a.nav-link--footer {
     border: 3px solid var(--black);
     width: 192px;
     height: 56px;
+    color: var(--black);
+    text-transform: uppercase;
+    font: 700 italic 0.75rem "Space Mono", monospace;
 }
 
 /*Button backgrounds*/
