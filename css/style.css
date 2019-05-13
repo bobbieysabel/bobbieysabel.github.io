@@ -639,6 +639,11 @@ p.subtitle {
     align-items: center;
 }
 
+.flex--align-start {
+    display: flex;
+    align-items: flex-start;
+}
+
 /*Creates line to divide major sections*/
 
 hr {
