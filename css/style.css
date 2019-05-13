@@ -35,6 +35,7 @@ body.homepage {
     background: var(--black);
 }
 
+/*Applies 3x3 header/content/footer grid to all pages*/
 .container {
     display: grid;
     grid-template-areas: "header header header" "content content content" "footer footer footer";
@@ -266,7 +267,7 @@ main {
     max-width: 100vw;
 }
 
-main.homepage, main.about, article.case-study, .divider-content {
+main.homepage, main.about, article.case-study, .divider-content, .subgrid {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
