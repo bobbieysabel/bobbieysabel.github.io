@@ -766,12 +766,12 @@ blockquote p {
 }
 
 #wardrobe-blockquote {
-    background: -webkit-linear-gradient(var(--salmon), #E89600);
+  /*  background: -webkit-linear-gradient(var(--salmon), #E89600);
     background: var(--salmon);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    color: transparent;*/
     color: var(--salmon);
 }
 
