@@ -434,6 +434,13 @@ figcaption {
     display: block;
 }
 
+@media (min-width: 600px) {
+    .img-container--half-width img {
+        width: 50%;
+        display: block;
+    }
+}
+
 @media (max-width: 600px) {
     .img-container--full-width {
         width: 100vw;
@@ -775,7 +782,6 @@ path.back-to-top {
 path.back-to-top:hover {
     fill: var(--mint);
 }
-
 
 .back-to-top-show {
     display: block;
