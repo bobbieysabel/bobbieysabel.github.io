@@ -107,6 +107,7 @@ footer {
     grid-area: footer;
     background: var(--black);
     margin-top: 3rem;
+    padding-bottom: 0.333rem;
 }
 
 .footer-line {
