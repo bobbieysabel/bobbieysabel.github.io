@@ -651,6 +651,11 @@ p.subtitle {
     align-items: flex-start;
 }
 
+.flex--justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
 /*Creates line to divide major sections*/
 
 hr {
@@ -681,6 +686,7 @@ p.main-insights-text {
     border-left: 1px solid var(--dark-grey);
     padding-left: 10px;
     margin-left: 20%;
+    margin-top: 1rem;
 }
 
 ul.list--bulleted {
