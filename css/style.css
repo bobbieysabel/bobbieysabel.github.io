@@ -36,6 +36,7 @@ body.homepage {
 }
 
 /*Applies 3x3 header/content/footer grid to all pages*/
+
 .container {
     display: grid;
     grid-template-areas: "header header header" "content content content" "footer footer footer";
@@ -297,9 +298,10 @@ main.homepage, main.about, article.case-study, .divider-content, .subgrid {
     }
 }
 
+/*
 main section>* {
     margin-top: 1rem;
-}
+}*/
 
 /*Text styles*/
 
@@ -741,6 +743,9 @@ blockquote p {
     line-height: 1.2;
     display: none;
     cursor: pointer;
+    color: var(--black);
+    text-transform: uppercase;
+    font: 700 italic 0.75rem "Space Mono", monospace;
 }
 
 path.back-to-top {
@@ -750,6 +755,7 @@ path.back-to-top {
 path.back-to-top:hover {
     fill: var(--mint);
 }
+
 
 .back-to-top-show {
     display: block;
