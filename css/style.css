@@ -391,6 +391,13 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font: 400 0.75rem "Space Mono", monospace;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    margin: 0;
+}
+
 p {
     font: 400 1rem/1.7 "IBM Plex Sans", sans-serif;
     color: var(--black);
@@ -766,7 +773,7 @@ blockquote p {
 }
 
 #wardrobe-blockquote {
-  /*  background: -webkit-linear-gradient(var(--salmon), #E89600);
+    /*  background: -webkit-linear-gradient(var(--salmon), #E89600);
     background: var(--salmon);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
