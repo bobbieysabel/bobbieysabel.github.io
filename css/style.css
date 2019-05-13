@@ -106,12 +106,12 @@ nav ul {
 footer {
     grid-area: footer;
     background: var(--black);
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .footer-line {
-    padding-top: 1rem;
-    border-bottom: 1px solid var(--light-grey);
+    margin: 1rem 0;
+    border-top: 1px solid var(--light-grey);
 }
 
 .footer-text--container {
@@ -127,11 +127,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .copyright-text {
     font-family: "Space Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.666rem;
     color: var(--light-grey);
 }
 
@@ -196,7 +197,7 @@ a.nav-link--footer {
     font: 700 20px "IBM Plex Sans", sans-serif;
     position: relative;
     color: var(--white);
-    padding: 4px 0;
+    padding-top: .333rem;
 }
 
 /*Button styles*/
