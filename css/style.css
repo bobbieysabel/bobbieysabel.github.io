@@ -280,7 +280,7 @@ main.homepage {
     padding-top: 1rem;
 }
 
-main.about, article.case-study {
+main.about, article.case-study, main.writing, article.essay {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
@@ -388,6 +388,13 @@ h2 {
 h3 {
     font: 700 1rem/1.7 "IBM Plex Sans", sans-serif;
     color: var(--black);
+    margin: 0;
+}
+
+h4 {
+    font: 400 0.75rem "Space Mono", monospace;
+    color: var(--dark-grey);
+    text-transform: uppercase;
     margin: 0;
 }
 
@@ -766,7 +773,7 @@ blockquote p {
 }
 
 #wardrobe-blockquote {
-  /*  background: -webkit-linear-gradient(var(--salmon), #E89600);
+    /*  background: -webkit-linear-gradient(var(--salmon), #E89600);
     background: var(--salmon);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
