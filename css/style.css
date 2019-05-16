@@ -145,6 +145,14 @@ a {
     font-weight: 700;
 }
 
+a.inline--mint:hover {
+    color: var(--mint);
+}
+
+a.inline--salmon:hover {
+    color: var(--salmon);
+}
+
 a.nav-link {
     display: inline-block;
     font: 700 20px "IBM Plex Sans", sans-serif;
