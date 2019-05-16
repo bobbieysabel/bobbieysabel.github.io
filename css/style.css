@@ -658,6 +658,7 @@ article.project {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-template-rows: auto;
         grid-gap: 1rem;
+        padding: 1rem 0;
     }
     .problem-solution .problem-text {
         grid-column: 1/2;
