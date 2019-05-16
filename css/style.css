@@ -140,16 +140,21 @@ footer {
 /*Link styles*/
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: var(--black);
     font-weight: 700;
 }
 
-a.inline--mint:hover {
+a.hover--mint:hover {
     color: var(--mint);
 }
 
-a.inline--salmon:hover {
+a.hover--sky:hover {
+    color: var(--sky);
+}
+
+a.hover--salmon:hover {
     color: var(--salmon);
 }
 
@@ -633,7 +638,6 @@ article.project {
     .one-x-three>* {
         max-width: 100%;
     }
-    
 }
 
 .flex--one-x-three {
@@ -641,6 +645,7 @@ article.project {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 /*Problem and solution grid*/
 
 @media (min-width: 600px) {
