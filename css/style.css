@@ -214,6 +214,10 @@ a.nav-link--footer {
     padding-top: .333rem;
 }
 
+a.nav-link--footer:hover {
+    color: var(--light-grey);
+}
+
 /*Button styles*/
 
 .btn-container {
