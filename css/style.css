@@ -742,9 +742,17 @@ p.main-insights-text {
 
 .lined {
     border-left: 1px solid var(--dark-grey);
-    padding-left: 10px;
-    margin-left: 20%;
+    padding-left: 2px;
+    margin-left: 10%;
     margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+    .lined {
+        padding-left: 10px;
+        margin-left: 20%;
+    }
+    
 }
 
 ul.list--bulleted {
