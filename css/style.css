@@ -780,7 +780,7 @@ cite.dramatic {
     padding-bottom: 2rem;
 }
 
-blockquote.review-quote {
+blockquote.quote {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: italic;
     font-size: 1rem;
@@ -788,7 +788,7 @@ blockquote.review-quote {
     quotes: "“""”";
 }
 
-blockquote.review-quote:before {
+blockquote.quote:before {
     color: var(--black);
     content: open-quote;
     font-size: 4em;
