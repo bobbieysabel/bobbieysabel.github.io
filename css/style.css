@@ -615,7 +615,7 @@ article.project {
 .one-x-two {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
 }
 
 @media (min-width: 600px) {
@@ -675,6 +675,19 @@ article.project {
     }
 }
 
+/*Personas*/
+
+.persona {
+    display: grid;
+    grid-row-gap: 1rem;
+}
+/*
+@media (min-width: 600px) {
+    .persona {
+        padding: 0 1rem
+    }
+}
+*/
 /*Spacing and layout*/
 
 p.subtitle {
