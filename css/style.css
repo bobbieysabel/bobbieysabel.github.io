@@ -454,6 +454,11 @@ figcaption {
     display: block;
 }
 
+.img-container video {
+    width: 100%;
+    display: block;
+}
+
 .img-container--full-width img {
     width: 100%;
     display: block;
