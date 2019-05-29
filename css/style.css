@@ -740,7 +740,7 @@ p.main-insights-text {
 
 .lined {
     border-left: 1px solid var(--dark-grey);
-    padding-left: 2px;
+    padding-left: 0.5rem;
     margin-left: 10%;
     margin-top: 1rem;
 }
