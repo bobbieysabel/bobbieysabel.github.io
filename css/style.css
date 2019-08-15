@@ -834,8 +834,8 @@ blockquote p {
 
 .table-cell {
     border: 0.5px solid var(--light-grey);
-    padding: 0 5px;
-    font: 400 1rem/1.7 "IBM Plex Sans", sans-serif;
+    padding: 2px 5px;
+    font: 400 1rem/1.3 "IBM Plex Sans", sans-serif;
     color: var(--black);
 }
 
