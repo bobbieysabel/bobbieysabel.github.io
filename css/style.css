@@ -825,6 +825,41 @@ blockquote p {
     }
 }
 
+/*User stories table*/
+.table {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /*justify-items: center;*/
+}
+
+.table-cell {
+    border: 0.5px solid var(--light-grey);
+    padding: 0 5px;
+    font: 400 1rem/1.7 "IBM Plex Sans", sans-serif;
+    color: var(--black);
+}
+
+.table-cell--heading {
+    font-weight: 700;
+    border-top: none;
+    border-bottom: 2px solid var(--light-grey);
+}
+
+.table-cell--role {
+    border-left: none;
+}
+
+.table-cell--priority {
+    border-right: none;
+}
+
+.table-cell--must {
+    background-color: var(--mint);
+}
+
+.table-cell--should {
+    background-color: #FFC857;
+}
 /*Back-to-top button*/
 
 .back-to-top-container {
