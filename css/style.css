@@ -464,6 +464,10 @@ figcaption {
     display: block;
 }
 
+.img-container--border {
+    border: 1px solid var(--light-grey);
+}
+
 @media (min-width: 600px) {
     .img-container--half-width img {
         width: 50%;
