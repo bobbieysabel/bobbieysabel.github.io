@@ -468,6 +468,10 @@ figcaption {
     border: 1px solid var(--light-grey);
 }
 
+.img-container--border video {
+    border: 1px solid var(--light-grey);
+}
+
 @media (min-width: 600px) {
     .img-container--half-width img {
         width: 50%;
