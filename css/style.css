@@ -464,7 +464,7 @@ figcaption {
     display: block;
 }
 
-.img-container--border {
+.img-container--border img {
     border: 1px solid var(--light-grey);
 }
 
