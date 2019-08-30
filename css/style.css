@@ -347,7 +347,6 @@ h1 {
     margin: 0;
 }
 
-
 /*Creates colored lines under h1 text*/
 
 h1.mint-line::after {
@@ -502,10 +501,64 @@ figcaption {
 
 article.project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
 }
 
+#jumpstart-thumbnail {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#jumpstart-description {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#wardrobe-description {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#wardrobe-thumbnail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+@media (max-width: 600px) {
+    article.project {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1rem;
+    }
+
+    #jumpstart-thumbnail {
+        grid-column: -1/1;
+        grid-row: 1/2;
+    }
+
+    #jumpstart-description {
+        grid-column: -1/1;
+        grid-row: 2/3;
+        padding-bottom: 1rem;
+    }
+
+    #wardrobe-thumbnail {
+        grid-column: -1/1;
+        grid-row: 3/4;
+        padding-top: 3rem;
+    }
+
+    #wardrobe-description {
+        grid-column: -1/1;
+        grid-row: 4/5;
+        padding-bottom: 1rem;
+    }
+}
 .project-description {
     display: grid;
     grid-row-gap: 1rem;
@@ -694,6 +747,7 @@ article.project {
     display: grid;
     grid-row-gap: 1rem;
 }
+
 /*
 @media (min-width: 600px) {
     .persona {
@@ -701,6 +755,7 @@ article.project {
     }
 }
 */
+
 /*Spacing and layout*/
 
 p.subtitle {
@@ -763,7 +818,6 @@ p.main-insights-text {
         padding-left: 10px;
         margin-left: 20%;
     }
-    
 }
 
 ul.list--bulleted {
@@ -834,6 +888,7 @@ blockquote p {
 }
 
 /*User stories table*/
+
 .table {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -868,6 +923,7 @@ blockquote p {
 .table-cell--should {
     background-color: #FFC857;
 }
+
 /*Back-to-top button*/
 
 .back-to-top-container {
