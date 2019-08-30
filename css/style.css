@@ -527,7 +527,6 @@ article.project {
     grid-row: 2/3;
 }
 
-
 @media (max-width: 600px) {
     article.project {
         display: grid;
@@ -535,30 +534,27 @@ article.project {
         grid-template-rows: auto auto auto auto;
         grid-gap: 1rem;
     }
-
     #jumpstart-thumbnail {
         grid-column: -1/1;
         grid-row: 1/2;
     }
-
     #jumpstart-description {
         grid-column: -1/1;
         grid-row: 2/3;
         padding-bottom: 1rem;
     }
-
     #wardrobe-thumbnail {
         grid-column: -1/1;
         grid-row: 3/4;
         padding-top: 3rem;
     }
-
     #wardrobe-description {
         grid-column: -1/1;
         grid-row: 4/5;
         padding-bottom: 1rem;
     }
 }
+
 .project-description {
     display: grid;
     grid-row-gap: 1rem;
@@ -577,13 +573,44 @@ article.project {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 3rem;
     margin-top: 1.777rem;
     margin-left: 16px;
     margin-bottom: 1.777rem;
 }
 
 .scroll-down-chevron {
+    position: absolute;
     margin-bottom: -0.75rem;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.scroll-down-chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.scroll-down-chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100px) scale3d(0.5, 0.5, 0.5);
+    }
 }
 
 /*Text styles*/
