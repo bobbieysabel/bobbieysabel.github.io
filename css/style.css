@@ -228,55 +228,68 @@ a.nav-link--footer:hover {
 }
 
 /*Dark button*/
-
-.dark-btn-fg {
+.btn-fg {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--black);
-    border: 3px solid var(--white);
     width: 192px;
     height: 56px;
+    text-transform: uppercase;
+    font: 700 italic 0.75rem "Space Mono", monospace;
+    transition: all .2s ease-in-out;
+}
+
+.btn-fg:active {
+    transform: translate(4px, 4px);
+}
+
+.btn-fg--dark {
+    background-color: var(--black);
+    border: 3px solid var(--white);
     color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+.btn-fg--dark:hover {
+    background-color: var(--white);
+    color: var(--black);
     text-transform: uppercase;
     font: 700 italic 0.75rem "Space Mono", monospace;
 }
 
 /*Light button*/
 
-.light-btn-fg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-fg--light {
     background-color: var(--white);
     border: 3px solid var(--black);
-    width: 192px;
-    height: 56px;
     color: var(--black);
+    transition: all .3s ease-in-out;
+}
+
+.btn-fg--light:hover {
+    background-color: var(--black);
+    color: var(--white);
     text-transform: uppercase;
     font: 700 italic 0.75rem "Space Mono", monospace;
 }
 
 /*Button backgrounds*/
 
-.mint-btn-bg {
+.btn-bg {
     position: absolute;
     left: 6px;
-    top: 9px;
-    background-color: var(--mint);
+    top: 8px;
     width: 192px;
     height: 56px;
     z-index: -1;
 }
 
-.sky-btn-bg {
-    position: absolute;
-    left: 6px;
-    top: 9px;
+.btn-bg--mint {
+    background-color: var(--mint);
+}
+
+.btn-bg--sky {
     background-color: var(--sky);
-    width: 192px;
-    height: 56px;
-    z-index: -1;
 }
 
 /*Universal*/
