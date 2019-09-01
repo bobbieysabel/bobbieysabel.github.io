@@ -240,8 +240,12 @@ a.nav-link--footer:hover {
     transition: all .2s ease-in-out;
 }
 
+.btn-fg:hover {
+    transform: translate(3px, 4px);
+}
+
 .btn-fg:active {
-    transform: translate(4px, 4px);
+    transform: translate(6px, 8px);
 }
 
 .btn-fg--dark {
