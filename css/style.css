@@ -879,7 +879,9 @@ p.main-insights-text {
     }
 }
 
-ul.list--bulleted {
+.bulleted-list {
+    font: 400 1rem/1.7 "IBM Plex Sans", sans-serif;
+    color: var(--black);
     list-style: square;
     padding-left: 2rem;
 }
