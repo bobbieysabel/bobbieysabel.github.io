@@ -3,11 +3,10 @@ layout: post
 title: "Mastery: Learning from Michelangelo"
 category: writing
 permalink: /:title/
-excerpt_separator:
-<!--more-->
+excerpt_separator: <!--more-->
 ---
-> What the new Michelangelo exhibit at the Met did beautifully was showcase the mind and process of a man whose greatest
-love was his art. It was an enduring testament to his mastery. And it got me thinking: how does one become a master?
+> What the new Michelangelo exhibit at the Met did beautifully was showcase the mind and process of a man whose greatest love was his art. It was an enduring testament to his mastery. And it got me thinking: how does one become a master?
+<!--more-->
 
 Last week my boyfriend and I decided to take advantage of the warmer weather and visit a New York City classic, the
 Metropolitan Museum of Art. For those of you that haven't had the chance to go, the Met is an iconic institution and an
