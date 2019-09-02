@@ -12,22 +12,28 @@ category: writing
             <p>A journal for the clutter of my mind. Featuring thoughts on tech, design, and the magic of being
                 human.</p>
         </div>
-        <article class="single-column">
-            <div>
-                <div>
-                    <h2><a href="writing/four-love-stories-vancouver.html" class="hover--salmon">Four Love Stories
-                            from Vancouver</a></h2>
-                </div>
-                <h4>Published Jan 21, 2018</h4>
-            </div>
-            <p>Standing above the vast fjord in the heart of British Columbia, I felt small. But I love that
-                feeling. Because I knew the possibilities in me were infinite.</p>
-            <div>
-                <a href="writing/four-love-stories-vancouver.html" class="hover--salmon">Read the rest</a>
-            </div>
-        </article>
 
-        <article class="single-column">
+        <ul class="single-column" id="post-list">
+            {% for post in site.posts %}
+            <li>
+                <article>
+                    <div>
+                        <div>
+                            <h2><a href="{{ post.url }}"
+                                    class="hover--salmon">{{ post.title }}</a></h2>
+                        </div>
+                        <h4>{{ post.date | date:'%B %d, %Y' }}</h4>
+                    </div>
+                    <p>{{ post.excerpt | strip_html }}</p>
+                    <div>
+                        <a href="{{ post.url }}" class="hover--salmon">Read the rest</a>
+                    </div>
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+
+<!--<article class="single-column">
             <div>
                 <h2>
                     <a href="writing/mastery-learning-michelangelo.html" class="hover--salmon">Mastery: Learning
@@ -41,6 +47,7 @@ category: writing
             </p>
             <div><a href="writing/mastery-learning-michelangelo.html" class="hover--salmon">Read the rest</a>
             </div>
-        </article>
+        </article>-->
+        
     </section>
 </main>
