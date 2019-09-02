@@ -31,7 +31,7 @@ body {
 
 /*Makes background black on homepage only*/
 
-body.homepage {
+.homepage {
     background: var(--black);
 }
 
@@ -879,7 +879,9 @@ p.main-insights-text {
     }
 }
 
-ul.list--bulleted {
+.bulleted-list {
+    font: 400 1rem/1.7 "IBM Plex Sans", sans-serif;
+    color: var(--black);
     list-style: square;
     padding-left: 2rem;
 }
@@ -983,6 +985,13 @@ blockquote p {
     background-color: #FFC857;
 }
 
+/*Post list*/
+
+#post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+}
 /*Back-to-top button*/
 
 .back-to-top-container {
