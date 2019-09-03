@@ -198,10 +198,9 @@ a {
 }
 
 .nav-link--active::after {
-    width:100%;
+    width: 100%;
     transition: none;
 }
-
 
 /*Same as header nav links but with less top/bottom padding*/
 
@@ -491,73 +490,44 @@ figcaption {
 
 /*Layout and spacing*/
 
-article.project {
+.project {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
 }
 
-#jumpstart-thumbnail {
+.project_thumbnail {
     grid-column: 1/2;
-    grid-row: 1/2;
 }
 
-#jumpstart-description {
+.project_description {
     grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-#wardrobe-description {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-#wardrobe-thumbnail {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    display: grid;
+    grid-row-gap: 1rem;
+    margin: 0;
+    padding: 10% 0;
 }
 
 @media (max-width: 600px) {
-    article.project {
+    .project {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: minmax(240px, 1fr);
+        grid-template-rows: auto auto;
         grid-gap: 1rem;
+        padding-bottom: 3rem;
     }
-    #jumpstart-thumbnail {
+    .project_thumbnail {
         grid-column: -1/1;
         grid-row: 1/2;
     }
-    #jumpstart-description {
+    .project_description {
         grid-column: -1/1;
         grid-row: 2/3;
-        padding-bottom: 1rem;
+        display: grid;
+        grid-row-gap: 1rem;
+        margin: 0;
+        padding: 0;
     }
-    #wardrobe-thumbnail {
-        grid-column: -1/1;
-        grid-row: 3/4;
-        padding-top: 3rem;
-    }
-    #wardrobe-description {
-        grid-column: -1/1;
-        grid-row: 4/5;
-        padding-bottom: 1rem;
-    }
-}
-
-.project-description {
-    display: grid;
-    grid-row-gap: 1rem;
-}
-
-.project-thumbnail {
-    max-width: 480px;
-}
-
-.project-description {
-    margin: 0;
 }
 
 .scroll-down-container {
@@ -952,6 +922,7 @@ blockquote p {
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
 }
+
 /*Back-to-top button*/
 
 .back-to-top-container {
