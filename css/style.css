@@ -339,10 +339,10 @@ main {
 }
 
 .divider-content, .subgrid {
-    display: inherit;
-    max-width: inherit;
-    grid-template-columns: inherit;
-    grid-row-gap: inherit;
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);
+    grid-row-gap: 2rem;
 }
 
 .single-column {
