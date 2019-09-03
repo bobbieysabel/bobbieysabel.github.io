@@ -366,38 +366,13 @@ h1 {
 
 /*Creates colored lines under h1 text*/
 
-h1.mint-line::after {
+.top-level-title::after {
     content: '';
     position: absolute;
     left: 0;
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom: 3px solid var(--mint);
-    margin-top: 5px;
-    z-index: -1;
-}
-
-h1.sky-line::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    height: 1em;
-    width: 100%;
-    border-bottom: 3px solid var(--sky);
-    margin-top: 5px;
-    z-index: -1;
-}
-
-h1.salmon-line::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    height: 1em;
-    width: 100%;
-    border-bottom: 3px solid var(--salmon);
     margin-top: 5px;
     z-index: -1;
 }
