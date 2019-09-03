@@ -31,7 +31,7 @@ body {
 
 /*Makes background black on homepage only*/
 
-.homepage {
+#homepage {
     background: var(--black);
 }
 
@@ -95,7 +95,7 @@ ul {
     margin: 0;
 }
 
-nav ul {
+#nav-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,19 +147,19 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-a.hover--mint:hover {
+.hover--mint:hover {
     color: var(--mint);
 }
 
-a.hover--sky:hover {
+.hover--sky:hover {
     color: var(--sky);
 }
 
-a.hover--salmon:hover {
+.hover--salmon:hover {
     color: var(--salmon);
 }
 
-a.nav-link {
+.nav-link {
     display: inline-block;
     font: 700 20px "IBM Plex Sans", sans-serif;
     position: relative;
@@ -169,7 +169,7 @@ a.nav-link {
 
 /*Creates the colored lines under active links*/
 
-a.mint-line::after {
+.nav-work::after {
     content: '';
     position: absolute;
     left: 0;
@@ -182,7 +182,7 @@ a.mint-line::after {
     transition: all .5s ease;
 }
 
-a.sky-line::after {
+.nav-about::after {
     content: '';
     position: absolute;
     left: 0;
@@ -195,7 +195,7 @@ a.sky-line::after {
     transition: all .5s ease;
 }
 
-a.salmon-line::after {
+.nav-writing::after {
     content: '';
     position: absolute;
     left: 0;
@@ -208,11 +208,11 @@ a.salmon-line::after {
     transition: all .5s ease
 }
 
-a.mint-line:hover::after, a.sky-line:hover::after, a.salmon-line:hover::after {
+.nav-work:hover::after, .nav-about:hover::after, .nav-writing:hover::after {
     width: 100%;
 }
 
-a.mint-line--active::after, a.sky-line--active::after, a.salmon-line--active::after {
+.nav-work--active::after, .nav-about--active::after, .nav-writing--active::after {
     width:100%;
     transition: none;
 }
@@ -220,7 +220,7 @@ a.mint-line--active::after, a.sky-line--active::after, a.salmon-line--active::af
 
 /*Same as header nav links but with less top/bottom padding*/
 
-a.nav-link--footer {
+.footer_nav-link {
     display: inline-block;
     font: 700 20px "IBM Plex Sans", sans-serif;
     position: relative;
@@ -228,7 +228,7 @@ a.nav-link--footer {
     padding-top: .333rem;
 }
 
-a.nav-link--footer:hover {
+.footer_nav-link:hover {
     color: var(--light-grey);
 }
 
@@ -320,7 +320,7 @@ main {
     max-width: 100vw;
 }
 
-main.homepage {
+#homepage-content {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 85px) minmax(240px, 830px) minmax(0px, 85px) minmax(16px, 1fr);
@@ -329,7 +329,7 @@ main.homepage {
     padding-top: 1rem;
 }
 
-main.about, article.case-study, main.writing, article.essay {
+.main-content {
     display: grid;
     max-width: 100vw;
     grid-template-columns: minmax(16px, 1fr) minmax(0px, 170px) minmax(240px, 660px) minmax(0px, 170px) minmax(16px, 1fr);

@@ -25,7 +25,7 @@
 
 
 {% if page.title == "Bobbie Ysabel Benedito | Designer" %}
-<body class="homepage">
+<body id="homepage">
 {% else %}
 <body>
 {% endif %}
@@ -39,23 +39,23 @@
                 </a>
             </div>
             <nav>
-                <ul>
+                <ul id="nav-links">
                     {% if page.category == "work" %}
-                    <li><a href="/index.html" class="nav-link mint-line mint-line--active">Work</a></li>
+                    <li><a href="/index.html" class="nav-link nav-work nav-work--active">Work</a></li>
                     {% else %}
-                    <li><a href="/index.html" class="nav-link mint-line">Work</a></li>
+                    <li><a href="/index.html" class="nav-link nav-work">Work</a></li>
                     {% endif %}
 
                     {% if page.category == "about" %}
-                    <li><a href="/about.html" class="nav-link sky-line sky-line--active">About</a></li>
+                    <li><a href="/about.html" class="nav-link nav-about nav-about--active">About</a></li>
                     {% else %}
-                    <li><a href="/about.html" class="nav-link sky-line">About</a></li>
+                    <li><a href="/about.html" class="nav-link nav-about">About</a></li>
                     {% endif %}
 
                     {% if page.category == "writing" %}
-                    <li><a href="/writing.html" class="nav-link salmon-line salmon-line--active">Writing</a></li>
+                    <li><a href="/writing.html" class="nav-link nav-writing nav-writing--active">Writing</a></li>
                     {% else %}
-                    <li><a href="/writing.html" class="nav-link salmon-line">Writing</a></li>
+                    <li><a href="/writing.html" class="nav-link nav-writing">Writing</a></li>
                     {% endif %}
                 </ul>
             </nav>
